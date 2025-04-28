@@ -1,0 +1,2064 @@
+  0
+in launch_jobs
+[{'arch': 'resnet152', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd', 'num_kernels': 2340, 'num_iters': 20, 'args': {'model_name': 'resnet152', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'resnet152', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd', 'num_kernels': 2340, 'num_iters': 20, 'args': {'model_name': 'resnet152', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'resnet152', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd', 'num_kernels': 2340, 'num_iters': 20, 'args': {'model_name': 'resnet152', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'resnet152', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd', 'num_kernels': 2340, 'num_iters': 20, 'args': {'model_name': 'resnet152', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}]
+4
+1.12.0a0+git67ece03
+resnet152 8 0 [<threading.Barrier object at 0x7fb1bcb1fd00>, <threading.Barrier object at 0x7fb1bcb1fc70>, <threading.Barrier object at 0x7fb1bcb1ff40>, <threading.Barrier object at 0x7fb1bcb2f100>] 0
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+resnet152 8 0 [<threading.Barrier object at 0x7fb1bcb1fd00>, <threading.Barrier object at 0x7fb1bcb1fc70>, <threading.Barrier object at 0x7fb1bcb1ff40>, <threading.Barrier object at 0x7fb1bcb2f100>] 1
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+resnet152 8 0 [<threading.Barrier object at 0x7fb1bcb1fd00>, <threading.Barrier object at 0x7fb1bcb1fc70>, <threading.Barrier object at 0x7fb1bcb1ff40>, <threading.Barrier object at 0x7fb1bcb2f100>] 2
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+resnet152 8 0 [<threading.Barrier object at 0x7fb1bcb1fd00>, <threading.Barrier object at 0x7fb1bcb1fc70>, <threading.Barrier object at 0x7fb1bcb1ff40>, <threading.Barrier object at 0x7fb1bcb2f100>] 3
+[206683, 206684, 206685, 206686]
+before start !!!!!!!!!!!!!!
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+REEF IS False, SEQUENTIAL IS False
+[False, False, False, False]
+['resnet152', 'resnet152', 'resnet152', 'resnet152'] [b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd'] [206683, 206684, 206685, 206686]
+Num clients is 4
+before starting, profile is True
+-------------- thread id:   206683
+-------------- thread id:   206686
+-------------- thread id:   206684
+-------------- thread id:   206685
+Enter loop!
+Start epoch:  0
+Client 0, submit!, batch_idx is 0, num iter is 20
+Client 0, submit!, batch_idx is 0
+Client 0 finished! Wait! It took 0.13453340530395508
+Enter loop!
+Start epoch:  0
+Client 3, submit!, batch_idx is 0, num iter is 20
+Client 3, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 2, submit!, batch_idx is 0, num iter is 20
+Client 2, submit!, batch_idx is 0
+Client 3 finished! Wait! It took 0.15438270568847656
+Enter loop!
+Start epoch:  0
+Client 1, submit!, batch_idx is 0, num iter is 20
+Client 1, submit!, batch_idx is 0
+Client 1 finished! Wait! It took 0.12374043464660645
+wait here
+Client 2 finished! Wait! It took 0.1962568759918213
+Client 2, submit!, batch_idx is 1, num iter is 20
+Client 2, submit!, batch_idx is 1
+Client 1, submit!, batch_idx is 1, num iter is 20
+Client 1, submit!, batch_idx is 1
+done!
+Client 3, submit!, batch_idx is 1, num iter is 20
+Client 3, submit!, batch_idx is 1
+Client 0, submit!, batch_idx is 1, num iter is 20
+Client 0, submit!, batch_idx is 1
+Client 3 finished! Wait! It took 0.3807685375213623
+Client 3, submit!, batch_idx is 2, num iter is 20
+Client 3, submit!, batch_idx is 2
+Client 2 finished! Wait! It took 0.24555730819702148
+Client 2, submit!, batch_idx is 2, num iter is 20
+Client 2, submit!, batch_idx is 2
+Client 0 finished! Wait! It took 0.7065999507904053
+Client 0, submit!, batch_idx is 2, num iter is 20
+Client 0, submit!, batch_idx is 2
+Client 1 finished! Wait! It took 0.2642805576324463
+Client 1, submit!, batch_idx is 2, num iter is 20
+Client 1, submit!, batch_idx is 2
+Client 2 finished! Wait! It took 0.24198007583618164
+Client 2, submit!, batch_idx is 3, num iter is 20
+Client 2, submit!, batch_idx is 3
+Client 3 finished! Wait! It took 0.24875426292419434
+Client 3, submit!, batch_idx is 3, num iter is 20
+Client 3, submit!, batch_idx is 3
+Client 0 finished! Wait! It took 0.2538433074951172
+Client 0, submit!, batch_idx is 3, num iter is 20
+Client 0, submit!, batch_idx is 3
+Client 1 finished! Wait! It took 0.25630807876586914
+Client 1, submit!, batch_idx is 3, num iter is 20
+Client 1, submit!, batch_idx is 3
+Client 2 finished! Wait! It took 0.2428600788116455
+Client 2, submit!, batch_idx is 4, num iter is 20
+Client 2, submit!, batch_idx is 4
+Client 3 finished! Wait! It took 0.25029873847961426
+Client 3, submit!, batch_idx is 4, num iter is 20
+Client 3, submit!, batch_idx is 4
+Client 0 finished! Wait! It took 0.2592592239379883
+Client 0, submit!, batch_idx is 4, num iter is 20
+Client 0, submit!, batch_idx is 4
+Client 1 finished! Wait! It took 0.2540113925933838
+Client 1, submit!, batch_idx is 4, num iter is 20
+Client 1, submit!, batch_idx is 4
+Client 3 finished! Wait! It took 0.2411787509918213
+Client 3, submit!, batch_idx is 5, num iter is 20
+Client 3, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.25571370124816895
+Client 2, submit!, batch_idx is 5, num iter is 20
+Client 2, submit!, batch_idx is 5
+Client 0 finished! Wait! It took 0.2492051124572754
+Client 0, submit!, batch_idx is 5, num iter is 20
+Client 0, submit!, batch_idx is 5
+Client 1 finished! Wait! It took 0.24710893630981445
+Client 1, submit!, batch_idx is 5, num iter is 20
+Client 1, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.24608421325683594
+Client 2, submit!, batch_idx is 6, num iter is 20
+Client 2, submit!, batch_idx is 6
+Client 3 finished! Wait! It took 0.254941463470459
+Client 3, submit!, batch_idx is 6, num iter is 20
+Client 3, submit!, batch_idx is 6
+Client 0 finished! Wait! It took 0.24858808517456055
+Client 0, submit!, batch_idx is 6, num iter is 20
+Client 0, submit!, batch_idx is 6
+Client 1 finished! Wait! It took 0.2556650638580322
+Client 1, submit!, batch_idx is 6, num iter is 20
+Client 1, submit!, batch_idx is 6
+Client 3 finished! Wait! It took 0.24480676651000977
+Client 3, submit!, batch_idx is 7, num iter is 20
+Client 3, submit!, batch_idx is 7
+Client 2 finished! Wait! It took 0.25350189208984375
+Client 2, submit!, batch_idx is 7, num iter is 20
+Client 2, submit!, batch_idx is 7
+Client 0 finished! Wait! It took 0.25361037254333496
+Client 0, submit!, batch_idx is 7, num iter is 20
+Client 0, submit!, batch_idx is 7
+Client 1 finished! Wait! It took 0.2520592212677002
+Client 1, submit!, batch_idx is 7, num iter is 20
+Client 1, submit!, batch_idx is 7
+Client 3 finished! Wait! It took 0.244401216506958
+Client 3, submit!, batch_idx is 8, num iter is 20
+Client 3, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.24817252159118652
+Client 2, submit!, batch_idx is 8, num iter is 20
+Client 2, submit!, batch_idx is 8
+Client 0 finished! Wait! It took 0.2602832317352295
+Client 0, submit!, batch_idx is 8, num iter is 20
+Client 0, submit!, batch_idx is 8
+Client 1 finished! Wait! It took 0.2628812789916992
+Client 1, submit!, batch_idx is 8, num iter is 20
+Client 1, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.24097013473510742
+Client 2, submit!, batch_idx is 9, num iter is 20
+Client 2, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.2512998580932617
+Client 3, submit!, batch_idx is 9, num iter is 20
+Client 3, submit!, batch_idx is 9
+Client 0 finished! Wait! It took 0.2561514377593994
+Client 0, submit!, batch_idx is 9, num iter is 20
+Client 0, submit!, batch_idx is 9
+Client 1 finished! Wait! It took 0.2591691017150879
+Client 1, submit!, batch_idx is 9, num iter is 20
+Client 1, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.2480931282043457
+Client 2 finished! Wait! It took 0.2536163330078125
+Client 0 finished! Wait! It took 0.21837544441223145
+Client 1 finished! Wait! It took 0.21459007263183594
+Client 1, submit!, batch_idx is 10, num iter is 20
+Client 1, submit!, batch_idx is 10
+call schedule
+Client 2, submit!, batch_idx is 10, num iter is 20
+Client 2, submit!, batch_idx is 10
+Client 0, submit!, batch_idx is 10, num iter is 20
+Client 0, submit!, batch_idx is 10
+Client 3, submit!, batch_idx is 10, num iter is 20
+Client 3, submit!, batch_idx is 10
+Client 0 finished! Wait! It took 0.24042463302612305
+Client 0, submit!, batch_idx is 11, num iter is 20
+Client 0, submit!, batch_idx is 11
+Client 3 finished! Wait! It took 0.2465062141418457
+Client 3, submit!, batch_idx is 11, num iter is 20
+Client 3, submit!, batch_idx is 11
+Client 2 finished! Wait! It took 0.24695253372192383
+Client 2, submit!, batch_idx is 11, num iter is 20
+Client 2, submit!, batch_idx is 11
+Client 1 finished! Wait! It took 0.2644155025482178
+Client 1, submit!, batch_idx is 11, num iter is 20
+Client 1, submit!, batch_idx is 11
+Client 0 finished! Wait! It took 0.47951841354370117
+Client 0, submit!, batch_idx is 12, num iter is 20
+Client 0, submit!, batch_idx is 12
+Client 3 finished! Wait! It took 0.4931814670562744
+Client 3, submit!, batch_idx is 12, num iter is 20
+Client 3, submit!, batch_idx is 12
+Client 2 finished! Wait! It took 0.5067942142486572
+Client 2, submit!, batch_idx is 12, num iter is 20
+Client 2, submit!, batch_idx is 12
+Client 1 finished! Wait! It took 0.5177466869354248
+Client 1, submit!, batch_idx is 12, num iter is 20
+Client 1, submit!, batch_idx is 12
+Client 0 finished! Wait! It took 0.5587036609649658
+Client 0, submit!, batch_idx is 13, num iter is 20
+Client 0, submit!, batch_idx is 13
+Client 3 finished! Wait! It took 0.5600824356079102
+Client 3, submit!, batch_idx is 13, num iter is 20
+Client 3, submit!, batch_idx is 13
+Client 1 finished! Wait! It took 0.5866758823394775
+Client 1, submit!, batch_idx is 13, num iter is 20
+Client 1, submit!, batch_idx is 13
+Client 2 finished! Wait! It took 0.5938537120819092
+Client 2, submit!, batch_idx is 13, num iter is 20
+Client 2, submit!, batch_idx is 13
+Client 0 finished! Wait! It took 0.713538408279419
+Client 0, submit!, batch_idx is 14, num iter is 20
+Client 0, submit!, batch_idx is 14
+Client 3 finished! Wait! It took 0.7301537990570068
+Client 3, submit!, batch_idx is 14, num iter is 20
+Client 3, submit!, batch_idx is 14
+Client 2 finished! Wait! It took 0.7475841045379639
+Client 2, submit!, batch_idx is 14, num iter is 20
+Client 2, submit!, batch_idx is 14
+Client 1 finished! Wait! It took 0.7538704872131348
+Client 1, submit!, batch_idx is 14, num iter is 20
+Client 1, submit!, batch_idx is 14
+Client 0 finished! Wait! It took 0.9552829265594482
+Client 0, submit!, batch_idx is 15, num iter is 20
+Client 0, submit!, batch_idx is 15
+Client 3 finished! Wait! It took 0.9753947257995605
+Client 3, submit!, batch_idx is 15, num iter is 20
+Client 3, submit!, batch_idx is 15
+Client 1 finished! Wait! It took 0.9768402576446533
+Client 1, submit!, batch_idx is 15, num iter is 20
+Client 1, submit!, batch_idx is 15
+Client 2 finished! Wait! It took 0.9905226230621338
+Client 2, submit!, batch_idx is 15, num iter is 20
+Client 2, submit!, batch_idx is 15
+Client 1 finished! Wait! It took 1.197876214981079
+Client 1, submit!, batch_idx is 16, num iter is 20
+Client 1, submit!, batch_idx is 16
+Client 0 finished! Wait! It took 1.2033839225769043
+Client 0, submit!, batch_idx is 16, num iter is 20
+Client 0, submit!, batch_idx is 16
+Client 3 finished! Wait! It took 1.2180614471435547
+Client 3, submit!, batch_idx is 16, num iter is 20
+Client 3, submit!, batch_idx is 16
+Client 2 finished! Wait! It took 1.235464096069336
+Client 2, submit!, batch_idx is 16, num iter is 20
+Client 2, submit!, batch_idx is 16
+Client 1 finished! Wait! It took 1.4279448986053467
+Client 1, submit!, batch_idx is 17, num iter is 20
+Client 1, submit!, batch_idx is 17
+Client 0 finished! Wait! It took 1.4543070793151855
+Client 0, submit!, batch_idx is 17, num iter is 20
+Client 0, submit!, batch_idx is 17
+Client 3 finished! Wait! It took 1.4579670429229736
+Client 3, submit!, batch_idx is 17, num iter is 20
+Client 3, submit!, batch_idx is 17
+Client 2 finished! Wait! It took 1.4680118560791016
+Client 2, submit!, batch_idx is 17, num iter is 20
+Client 2, submit!, batch_idx is 17
+Client 1 finished! Wait! It took 1.6640956401824951
+Client 1, submit!, batch_idx is 18, num iter is 20
+Client 1, submit!, batch_idx is 18
+Client 3 finished! Wait! It took 1.6840169429779053
+Client 3, submit!, batch_idx is 18, num iter is 20
+Client 3, submit!, batch_idx is 18
+Client 0 finished! Wait! It took 1.6880607604980469
+Client 0, submit!, batch_idx is 18, num iter is 20
+Client 0, submit!, batch_idx is 18
+Client 2 finished! Wait! It took 1.7104823589324951
+Client 2, submit!, batch_idx is 18, num iter is 20
+Client 2, submit!, batch_idx is 18
+Client 1 finished! Wait! It took 1.8829796314239502
+Client 1, submit!, batch_idx is 19, num iter is 20
+Client 1, submit!, batch_idx is 19
+Client 0 finished! Wait! It took 1.8890888690948486
+Client 0, submit!, batch_idx is 19, num iter is 20
+Client 0, submit!, batch_idx is 19
+Client 3 finished! Wait! It took 1.9017434120178223
+Client 3, submit!, batch_idx is 19, num iter is 20
+Client 3, submit!, batch_idx is 19
+Client 2 finished! Wait! It took 1.9313905239105225
+Client 2, submit!, batch_idx is 19, num iter is 20
+Client 2, submit!, batch_idx is 19
+Client 1 finished! Wait! It took 2.1065192222595215
+Client 1 at barrier! 
+Client 1 Total execution time: 4.8776819705963135 seconds
+Client 0 finished! Wait! It took 2.115516185760498
+Client 0 at barrier! 
+Client 0 Total execution time: 5.352102994918823 seconds
+Client 3 finished! Wait! It took 2.1180615425109863
+Client 3 at barrier! 
+Client 3 Total execution time: 5.058776140213013 seconds
+Client 2 finished! Wait! It took 2.1258456707000732
+Client 2 at barrier! 
+Client 2 Total execution time: 4.967743635177612 seconds
+Client 2 finshed 10 iterations
+Client 3 finshed 10 iterations
+Client 1 finshed 10 iterations
+Total time is 2.5077033042907715
+Client 0 finshed 10 iterations
+Client 0 finished! p50: 1.0793334245681763 sec, p95: 2.0136238932609554 sec, p99: 2.0951377272605898 sec, average: 1.129782485961914
+
+Client 3 finished! p50: 1.0967280864715576 sec, p95: 2.0207183837890623 sec, p99: 2.0985929107666017 sec, average: 1.138516902923584
+
+Finished! Ready to join!
+Client 2 finished! p50: 1.1129933595657349 sec, p95: 2.038340854644775 sec, p99: 2.108344707489014 sec, average: 1.1556901693344117
+
+Finished! Ready to join!
+Finished! Ready to join!
+Client 1 finished! p50: 1.0873582363128662 sec, p95: 2.005926406383514 sec, p99: 2.0864006590843203 sec, average: 1.13789644241333
+
+Finished! Ready to join!
+Train threads joined!
+Scheduler thread joined!
+--------- All threads joined!
+Total energy consumed: 0.71 kJ
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd
+----------- SIZE: 2340
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd
+----------- SIZE: 2340
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd
+----------- SIZE: 2340
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet152_8_fwd
+----------- SIZE: 2340
+buffer size is 0
+buffer size is 0
+buffer size is 0
+buffer size is 0
+entered sched func!
+exited sched func!
+entered sched func!
+exited sched func!
+entered sched func!
+Client 1, Total loop took 2.487000 sec
+Client 0, Total loop took 2.496000 sec
+Client 3, Total loop took 2.499000 sec
+Client 2, Total loop took 2.507000 sec
+Total loop took 2.507000 sec
+exited sched func!
+config_files/new_baselines/Rnet_8_Rnet_8_Rnet_8_Rnet_8.json
+  0
+in launch_jobs
+[{'arch': 'resnet101', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd', 'num_kernels': 1575, 'num_iters': 20, 'args': {'model_name': 'resnet101', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'resnet101', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd', 'num_kernels': 1575, 'num_iters': 20, 'args': {'model_name': 'resnet101', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'resnet101', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd', 'num_kernels': 1575, 'num_iters': 20, 'args': {'model_name': 'resnet101', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'resnet101', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd', 'num_kernels': 1575, 'num_iters': 20, 'args': {'model_name': 'resnet101', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}]
+4
+1.12.0a0+git67ece03
+resnet101 8 0 [<threading.Barrier object at 0x7fc6815f1bb0>, <threading.Barrier object at 0x7fc6815f1e50>, <threading.Barrier object at 0x7fc6815f1df0>, <threading.Barrier object at 0x7fc681603070>] 0
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+resnet101 8 0 [<threading.Barrier object at 0x7fc6815f1bb0>, <threading.Barrier object at 0x7fc6815f1e50>, <threading.Barrier object at 0x7fc6815f1df0>, <threading.Barrier object at 0x7fc681603070>] 1
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+resnet101 8 0 [<threading.Barrier object at 0x7fc6815f1bb0>, <threading.Barrier object at 0x7fc6815f1e50>, <threading.Barrier object at 0x7fc6815f1df0>, <threading.Barrier object at 0x7fc681603070>] 2
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+resnet101 8 0 [<threading.Barrier object at 0x7fc6815f1bb0>, <threading.Barrier object at 0x7fc6815f1e50>, <threading.Barrier object at 0x7fc6815f1df0>, <threading.Barrier object at 0x7fc681603070>] 3
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+[206730, 206731, 206732, 206733]
+before start !!!!!!!!!!!!!!
+REEF IS False, SEQUENTIAL IS False
+[False, False, False, False]
+['resnet101', 'resnet101', 'resnet101', 'resnet101'] [b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd'] [206730, 206731, 206732, 206733]
+Num clients is 4
+before starting, profile is True
+-------------- thread id:   206732
+-------------- thread id:   206730
+-------------- thread id:   206733
+-------------- thread id:   206731
+Enter loop!
+Start epoch:  0
+Client 2, submit!, batch_idx is 0, num iter is 20
+Client 2, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 1, submit!, batch_idx is 0, num iter is 20
+Client 1, submit!, batch_idx is 0
+Client 2 finished! Wait! It took 0.15976381301879883
+Client 1 finished! Wait! It took 0.08562612533569336
+Enter loop!
+Start epoch:  0
+Client 0, submit!, batch_idx is 0, num iter is 20
+Client 0, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 3, submit!, batch_idx is 0, num iter is 20
+Client 3, submit!, batch_idx is 0
+Client 0 finished! Wait! It took 0.1186990737915039
+wait here
+Client 3 finished! Wait! It took 0.07726073265075684
+Client 3, submit!, batch_idx is 1, num iter is 20
+Client 3, submit!, batch_idx is 1
+Client 0, submit!, batch_idx is 1, num iter is 20
+Client 0, submit!, batch_idx is 1
+Client 1, submit!, batch_idx is 1, num iter is 20
+Client 1, submit!, batch_idx is 1
+done!
+Client 2, submit!, batch_idx is 1, num iter is 20
+Client 2, submit!, batch_idx is 1
+Client 3 finished! Wait! It took 0.1665048599243164
+Client 3, submit!, batch_idx is 2, num iter is 20
+Client 3, submit!, batch_idx is 2
+Client 1 finished! Wait! It took 0.3839695453643799
+Client 1, submit!, batch_idx is 2, num iter is 20
+Client 1, submit!, batch_idx is 2
+Client 0 finished! Wait! It took 0.18596124649047852
+Client 0, submit!, batch_idx is 2, num iter is 20
+Client 0, submit!, batch_idx is 2
+Client 2 finished! Wait! It took 0.4023611545562744
+Client 2, submit!, batch_idx is 2, num iter is 20
+Client 2, submit!, batch_idx is 2
+Client 3 finished! Wait! It took 0.15707993507385254
+Client 3, submit!, batch_idx is 3, num iter is 20
+Client 3, submit!, batch_idx is 3
+Client 1 finished! Wait! It took 0.16895627975463867
+Client 1, submit!, batch_idx is 3, num iter is 20
+Client 1, submit!, batch_idx is 3
+Client 2 finished! Wait! It took 0.16765952110290527
+Client 2, submit!, batch_idx is 3, num iter is 20
+Client 2, submit!, batch_idx is 3
+Client 0 finished! Wait! It took 0.19249320030212402
+Client 0, submit!, batch_idx is 3, num iter is 20
+Client 0, submit!, batch_idx is 3
+Client 3 finished! Wait! It took 0.1669635772705078
+Client 3, submit!, batch_idx is 4, num iter is 20
+Client 3, submit!, batch_idx is 4
+Client 1 finished! Wait! It took 0.16200971603393555
+Client 1, submit!, batch_idx is 4, num iter is 20
+Client 1, submit!, batch_idx is 4
+Client 2 finished! Wait! It took 0.17539358139038086
+Client 2, submit!, batch_idx is 4, num iter is 20
+Client 2, submit!, batch_idx is 4
+Client 0 finished! Wait! It took 0.1879885196685791
+Client 0, submit!, batch_idx is 4, num iter is 20
+Client 0, submit!, batch_idx is 4
+Client 3 finished! Wait! It took 0.16226887702941895
+Client 3, submit!, batch_idx is 5, num iter is 20
+Client 3, submit!, batch_idx is 5
+Client 1 finished! Wait! It took 0.16907548904418945
+Client 1, submit!, batch_idx is 5, num iter is 20
+Client 1, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.17548251152038574
+Client 2, submit!, batch_idx is 5, num iter is 20
+Client 2, submit!, batch_idx is 5
+Client 0 finished! Wait! It took 0.1827716827392578
+Client 0, submit!, batch_idx is 5, num iter is 20
+Client 0, submit!, batch_idx is 5
+Client 3 finished! Wait! It took 0.16373562812805176
+Client 3, submit!, batch_idx is 6, num iter is 20
+Client 3, submit!, batch_idx is 6
+Client 1 finished! Wait! It took 0.16614770889282227
+Client 1, submit!, batch_idx is 6, num iter is 20
+Client 1, submit!, batch_idx is 6
+Client 2 finished! Wait! It took 0.16605186462402344
+Client 2, submit!, batch_idx is 6, num iter is 20
+Client 2, submit!, batch_idx is 6
+Client 0 finished! Wait! It took 0.19201207160949707
+Client 0, submit!, batch_idx is 6, num iter is 20
+Client 0, submit!, batch_idx is 6
+Client 3 finished! Wait! It took 0.18210935592651367
+Client 3, submit!, batch_idx is 7, num iter is 20
+Client 3, submit!, batch_idx is 7
+Client 1 finished! Wait! It took 0.17504644393920898
+Client 1, submit!, batch_idx is 7, num iter is 20
+Client 1, submit!, batch_idx is 7
+Client 2 finished! Wait! It took 0.1681368350982666
+Client 2, submit!, batch_idx is 7, num iter is 20
+Client 2, submit!, batch_idx is 7
+Client 0 finished! Wait! It took 0.17554235458374023
+Client 0, submit!, batch_idx is 7, num iter is 20
+Client 0, submit!, batch_idx is 7
+Client 3 finished! Wait! It took 0.17284178733825684
+Client 3, submit!, batch_idx is 8, num iter is 20
+Client 3, submit!, batch_idx is 8
+Client 1 finished! Wait! It took 0.1797022819519043
+Client 1, submit!, batch_idx is 8, num iter is 20
+Client 1, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.1682422161102295
+Client 2, submit!, batch_idx is 8, num iter is 20
+Client 2, submit!, batch_idx is 8
+Client 0 finished! Wait! It took 0.18210387229919434
+Client 0, submit!, batch_idx is 8, num iter is 20
+Client 0, submit!, batch_idx is 8
+Client 3 finished! Wait! It took 0.17937755584716797
+Client 3, submit!, batch_idx is 9, num iter is 20
+Client 3, submit!, batch_idx is 9
+Client 1 finished! Wait! It took 0.1729583740234375
+Client 1, submit!, batch_idx is 9, num iter is 20
+Client 1, submit!, batch_idx is 9
+Client 2 finished! Wait! It took 0.16383028030395508
+Client 2, submit!, batch_idx is 9, num iter is 20
+Client 2, submit!, batch_idx is 9
+Client 0 finished! Wait! It took 0.17865991592407227
+Client 0, submit!, batch_idx is 9, num iter is 20
+Client 0, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.17357492446899414
+Client 1 finished! Wait! It took 0.17221641540527344
+Client 2 finished! Wait! It took 0.17133474349975586
+Client 0 finished! Wait! It took 0.1049506664276123
+Client 0, submit!, batch_idx is 10, num iter is 20
+Client 0, submit!, batch_idx is 10
+Client 3, submit!, batch_idx is 10, num iter is 20
+Client 3, submit!, batch_idx is 10
+call schedule
+Client 1, submit!, batch_idx is 10, num iter is 20
+Client 1, submit!, batch_idx is 10
+Client 2, submit!, batch_idx is 10, num iter is 20
+Client 2, submit!, batch_idx is 10
+Client 2 finished! Wait! It took 0.16004109382629395
+Client 2, submit!, batch_idx is 11, num iter is 20
+Client 2, submit!, batch_idx is 11
+Client 0 finished! Wait! It took 0.17111706733703613
+Client 0, submit!, batch_idx is 11, num iter is 20
+Client 0, submit!, batch_idx is 11
+Client 1 finished! Wait! It took 0.1714308261871338
+Client 1, submit!, batch_idx is 11, num iter is 20
+Client 1, submit!, batch_idx is 11
+Client 3 finished! Wait! It took 0.1931920051574707
+Client 3, submit!, batch_idx is 11, num iter is 20
+Client 3, submit!, batch_idx is 11
+Client 2 finished! Wait! It took 0.32519030570983887
+Client 2, submit!, batch_idx is 12, num iter is 20
+Client 2, submit!, batch_idx is 12
+Client 0 finished! Wait! It took 0.3398246765136719
+Client 0, submit!, batch_idx is 12, num iter is 20
+Client 0, submit!, batch_idx is 12
+Client 1 finished! Wait! It took 0.34908628463745117
+Client 1, submit!, batch_idx is 12, num iter is 20
+Client 1, submit!, batch_idx is 12
+Client 3 finished! Wait! It took 0.36357927322387695
+Client 3, submit!, batch_idx is 12, num iter is 20
+Client 3, submit!, batch_idx is 12
+Client 2 finished! Wait! It took 0.32194948196411133
+Client 2, submit!, batch_idx is 13, num iter is 20
+Client 2, submit!, batch_idx is 13
+Client 0 finished! Wait! It took 0.33305907249450684
+Client 0, submit!, batch_idx is 13, num iter is 20
+Client 0, submit!, batch_idx is 13
+Client 1 finished! Wait! It took 0.3502190113067627
+Client 1, submit!, batch_idx is 13, num iter is 20
+Client 1, submit!, batch_idx is 13
+Client 3 finished! Wait! It took 0.3639075756072998
+Client 3, submit!, batch_idx is 13, num iter is 20
+Client 3, submit!, batch_idx is 13
+Client 2 finished! Wait! It took 0.4011056423187256
+Client 2, submit!, batch_idx is 14, num iter is 20
+Client 2, submit!, batch_idx is 14
+Client 0 finished! Wait! It took 0.41781067848205566
+Client 0, submit!, batch_idx is 14, num iter is 20
+Client 0, submit!, batch_idx is 14
+Client 1 finished! Wait! It took 0.4271728992462158
+Client 1, submit!, batch_idx is 14, num iter is 20
+Client 1, submit!, batch_idx is 14
+Client 3 finished! Wait! It took 0.4545304775238037
+Client 3, submit!, batch_idx is 14, num iter is 20
+Client 3, submit!, batch_idx is 14
+Client 2 finished! Wait! It took 0.5638015270233154
+Client 2, submit!, batch_idx is 15, num iter is 20
+Client 2, submit!, batch_idx is 15
+Client 0 finished! Wait! It took 0.5775015354156494
+Client 0, submit!, batch_idx is 15, num iter is 20
+Client 0, submit!, batch_idx is 15
+Client 1 finished! Wait! It took 0.578561544418335
+Client 1, submit!, batch_idx is 15, num iter is 20
+Client 1, submit!, batch_idx is 15
+Client 3 finished! Wait! It took 0.6304876804351807
+Client 3, submit!, batch_idx is 15, num iter is 20
+Client 3, submit!, batch_idx is 15
+Client 2 finished! Wait! It took 0.7200493812561035
+Client 2, submit!, batch_idx is 16, num iter is 20
+Client 2, submit!, batch_idx is 16
+Client 1 finished! Wait! It took 0.7362797260284424
+Client 1, submit!, batch_idx is 16, num iter is 20
+Client 1, submit!, batch_idx is 16
+Client 0 finished! Wait! It took 0.7373900413513184
+Client 0, submit!, batch_idx is 16, num iter is 20
+Client 0, submit!, batch_idx is 16
+Client 3 finished! Wait! It took 0.8150761127471924
+Client 3, submit!, batch_idx is 16, num iter is 20
+Client 3, submit!, batch_idx is 16
+Client 2 finished! Wait! It took 0.8848114013671875
+Client 2, submit!, batch_idx is 17, num iter is 20
+Client 2, submit!, batch_idx is 17
+Client 1 finished! Wait! It took 0.8934683799743652
+Client 1, submit!, batch_idx is 17, num iter is 20
+Client 1, submit!, batch_idx is 17
+Client 0 finished! Wait! It took 0.8991971015930176
+Client 0, submit!, batch_idx is 17, num iter is 20
+Client 0, submit!, batch_idx is 17
+Client 3 finished! Wait! It took 0.9872167110443115
+Client 3, submit!, batch_idx is 17, num iter is 20
+Client 3, submit!, batch_idx is 17
+Client 2 finished! Wait! It took 1.0298819541931152
+Client 2, submit!, batch_idx is 18, num iter is 20
+Client 2, submit!, batch_idx is 18
+Client 1 finished! Wait! It took 1.0431387424468994
+Client 1, submit!, batch_idx is 18, num iter is 20
+Client 1, submit!, batch_idx is 18
+Client 0 finished! Wait! It took 1.0700867176055908
+Client 0, submit!, batch_idx is 18, num iter is 20
+Client 0, submit!, batch_idx is 18
+Client 3 finished! Wait! It took 1.148216962814331
+Client 3, submit!, batch_idx is 18, num iter is 20
+Client 3, submit!, batch_idx is 18
+Client 2 finished! Wait! It took 1.1698637008666992
+Client 2, submit!, batch_idx is 19, num iter is 20
+Client 2, submit!, batch_idx is 19
+Client 1 finished! Wait! It took 1.1769955158233643
+Client 1, submit!, batch_idx is 19, num iter is 20
+Client 1, submit!, batch_idx is 19
+Client 0 finished! Wait! It took 1.2025837898254395
+Client 0, submit!, batch_idx is 19, num iter is 20
+Client 0, submit!, batch_idx is 19
+Client 3 finished! Wait! It took 1.2849705219268799
+Client 3, submit!, batch_idx is 19, num iter is 20
+Client 3, submit!, batch_idx is 19
+Client 2 finished! Wait! It took 1.3178093433380127
+Client 2 at barrier! 
+Client 2 Total execution time: 3.649827718734741 seconds
+Client 1 finished! Wait! It took 1.32733154296875
+Client 1 at barrier! 
+Client 1 Total execution time: 3.5772523880004883 seconds
+Client 0 finished! Wait! It took 1.3423995971679688
+Client 0 at barrier! 
+Client 0 Total execution time: 3.4249041080474854 seconds
+Client 3 finished! Wait! It took 1.3663337230682373
+Client 3 at barrier! 
+Client 3 Total execution time: 3.3932690620422363 seconds
+Client 3 finshed 10 iterations
+Client 0 finshed 10 iterations
+Total time is 1.7479321956634521
+Client 1 finshed 10 iterations
+Client 2 finshed 10 iterations
+Client 0 finished! p50: 0.6574457883834839 sec, p95: 1.2794824838638303 sec, p99: 1.329816174507141 sec, average: 0.7090970277786255
+
+Client 3 finished! p50: 0.7227818965911865 sec, p95: 1.3297202825546264 sec, p99: 1.3590110349655151 sec, average: 0.7607511043548584
+
+Client 1 finished! p50: 0.6574206352233887 sec, p95: 1.2596803307533262 sec, p99: 1.3138013005256652 sec, average: 0.705368447303772
+
+Client 2 finished! p50: 0.6419254541397095 sec, p95: 1.2512338042259215 sec, p99: 1.3044942355155944 sec, average: 0.6894503831863403
+
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Train threads joined!
+Scheduler thread joined!
+--------- All threads joined!
+Total energy consumed: 0.50 kJ
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd
+----------- SIZE: 1575
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd
+----------- SIZE: 1575
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd
+----------- SIZE: 1575
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/resnet101_8_fwd
+----------- SIZE: 1575
+buffer size is 0
+buffer size is 0
+buffer size is 0
+buffer size is 0
+entered sched func!
+exited sched func!
+entered sched func!
+exited sched func!
+entered sched func!
+Client 2, Total loop took 1.698000 sec
+Client 1, Total loop took 1.708000 sec
+Client 0, Total loop took 1.723000 sec
+Client 3, Total loop took 1.747000 sec
+Total loop took 1.747000 sec
+exited sched func!
+config_files/new_baselines/R1net_8_R1net_8_R1net_8_R1net_8.json
+  0
+in launch_jobs
+[{'arch': 'densenet201', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd', 'num_kernels': 3298, 'num_iters': 20, 'args': {'model_name': 'densenet201', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'densenet201', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd', 'num_kernels': 3298, 'num_iters': 20, 'args': {'model_name': 'densenet201', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'densenet201', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd', 'num_kernels': 3298, 'num_iters': 20, 'args': {'model_name': 'densenet201', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'densenet201', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd', 'num_kernels': 3298, 'num_iters': 20, 'args': {'model_name': 'densenet201', 'batchsize': 8, 'rps': 20, 'uniform': True, 'dummy_data': True, 'train': False}}]
+4
+1.12.0a0+git67ece03
+densenet201 8 0 [<threading.Barrier object at 0x7f0cd8718c70>, <threading.Barrier object at 0x7f0cd8718ee0>, <threading.Barrier object at 0x7f0cd8718e80>, <threading.Barrier object at 0x7f0cd872a0d0>] 0
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+densenet201 8 0 [<threading.Barrier object at 0x7f0cd8718c70>, <threading.Barrier object at 0x7f0cd8718ee0>, <threading.Barrier object at 0x7f0cd8718e80>, <threading.Barrier object at 0x7f0cd872a0d0>] 1
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+densenet201 8 0 [<threading.Barrier object at 0x7f0cd8718c70>, <threading.Barrier object at 0x7f0cd8718ee0>, <threading.Barrier object at 0x7f0cd8718e80>, <threading.Barrier object at 0x7f0cd872a0d0>] 2
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+densenet201 8 0 [<threading.Barrier object at 0x7f0cd8718c70>, <threading.Barrier object at 0x7f0cd8718ee0>, <threading.Barrier object at 0x7f0cd8718e80>, <threading.Barrier object at 0x7f0cd872a0d0>] 3
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+[206765, 206766, 206767, 206768]
+before start !!!!!!!!!!!!!!
+REEF IS False, SEQUENTIAL IS False
+[False, False, False, False]
+['densenet201', 'densenet201', 'densenet201', 'densenet201'] [b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd'] [206765, 206766, 206767, 206768]
+Num clients is 4
+before starting, profile is True
+-------------- thread id:   206765
+-------------- thread id:   206768
+-------------- thread id:   206767
+-------------- thread id:   206766
+Enter loop!
+Start epoch:  0
+Client 0, submit!, batch_idx is 0, num iter is 20
+Client 0, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 1, submit!, batch_idx is 0, num iter is 20
+Client 1, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 3, submit!, batch_idx is 0, num iter is 20
+Client 3, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 2, submit!, batch_idx is 0, num iter is 20
+Client 2, submit!, batch_idx is 0
+Client 2 finished! Wait! It took 0.22584295272827148
+Client 0 finished! Wait! It took 0.2962465286254883
+Client 1 finished! Wait! It took 0.2409980297088623
+wait here
+Client 3 finished! Wait! It took 0.23427271842956543
+Client 3, submit!, batch_idx is 1, num iter is 20
+Client 3, submit!, batch_idx is 1
+Client 1, submit!, batch_idx is 1, num iter is 20
+Client 1, submit!, batch_idx is 1
+done!
+Client 2, submit!, batch_idx is 1, num iter is 20
+Client 2, submit!, batch_idx is 1
+Client 0, submit!, batch_idx is 1, num iter is 20
+Client 0, submit!, batch_idx is 1
+Client 1 finished! Wait! It took 0.22910451889038086
+Client 1, submit!, batch_idx is 2, num iter is 20
+Client 1, submit!, batch_idx is 2
+Client 0 finished! Wait! It took 0.22931456565856934
+Client 0, submit!, batch_idx is 2, num iter is 20
+Client 0, submit!, batch_idx is 2
+Client 3 finished! Wait! It took 0.23026752471923828
+Client 3, submit!, batch_idx is 2, num iter is 20
+Client 3, submit!, batch_idx is 2
+Client 2 finished! Wait! It took 0.23200511932373047
+Client 2, submit!, batch_idx is 2, num iter is 20
+Client 2, submit!, batch_idx is 2
+Client 3 finished! Wait! It took 0.22589111328125
+Client 3, submit!, batch_idx is 3, num iter is 20
+Client 3, submit!, batch_idx is 3
+Client 2 finished! Wait! It took 0.22580814361572266
+Client 2, submit!, batch_idx is 3, num iter is 20
+Client 2, submit!, batch_idx is 3
+Client 1 finished! Wait! It took 0.22936177253723145
+Client 1, submit!, batch_idx is 3, num iter is 20
+Client 1, submit!, batch_idx is 3
+Client 0 finished! Wait! It took 0.23001551628112793
+Client 0, submit!, batch_idx is 3, num iter is 20
+Client 0, submit!, batch_idx is 3
+Client 2 finished! Wait! It took 0.22589969635009766
+Client 2, submit!, batch_idx is 4, num iter is 20
+Client 2, submit!, batch_idx is 4
+Client 0 finished! Wait! It took 0.226456880569458
+Client 0, submit!, batch_idx is 4, num iter is 20
+Client 0, submit!, batch_idx is 4
+Client 1 finished! Wait! It took 0.22803783416748047
+Client 1, submit!, batch_idx is 4, num iter is 20
+Client 1, submit!, batch_idx is 4
+Client 3 finished! Wait! It took 0.230940580368042
+Client 3, submit!, batch_idx is 4, num iter is 20
+Client 3, submit!, batch_idx is 4
+Client 0 finished! Wait! It took 0.22569966316223145
+Client 0, submit!, batch_idx is 5, num iter is 20
+Client 0, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.22829484939575195
+Client 2, submit!, batch_idx is 5, num iter is 20
+Client 2, submit!, batch_idx is 5
+Client 1 finished! Wait! It took 0.22755670547485352
+Client 1, submit!, batch_idx is 5, num iter is 20
+Client 1, submit!, batch_idx is 5
+Client 3 finished! Wait! It took 0.2278592586517334
+Client 3, submit!, batch_idx is 5, num iter is 20
+Client 3, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.2278435230255127
+Client 2, submit!, batch_idx is 6, num iter is 20
+Client 2, submit!, batch_idx is 6
+Client 1 finished! Wait! It took 0.2267897129058838
+Client 1, submit!, batch_idx is 6, num iter is 20
+Client 1, submit!, batch_idx is 6
+Client 0 finished! Wait! It took 0.22954750061035156
+Client 0, submit!, batch_idx is 6, num iter is 20
+Client 0, submit!, batch_idx is 6
+Client 3 finished! Wait! It took 0.22596168518066406
+Client 3, submit!, batch_idx is 6, num iter is 20
+Client 3, submit!, batch_idx is 6
+Client 1 finished! Wait! It took 0.22603869438171387
+Client 1, submit!, batch_idx is 7, num iter is 20
+Client 1, submit!, batch_idx is 7
+Client 3 finished! Wait! It took 0.2272052764892578
+Client 3, submit!, batch_idx is 7, num iter is 20
+Client 3, submit!, batch_idx is 7
+Client 2 finished! Wait! It took 0.22879362106323242
+Client 2, submit!, batch_idx is 7, num iter is 20
+Client 2, submit!, batch_idx is 7
+Client 0 finished! Wait! It took 0.22810697555541992
+Client 0, submit!, batch_idx is 7, num iter is 20
+Client 0, submit!, batch_idx is 7
+Client 1 finished! Wait! It took 0.225266695022583
+Client 1, submit!, batch_idx is 8, num iter is 20
+Client 1, submit!, batch_idx is 8
+Client 0 finished! Wait! It took 0.223388671875
+Client 0, submit!, batch_idx is 8, num iter is 20
+Client 0, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.22849130630493164
+Client 2, submit!, batch_idx is 8, num iter is 20
+Client 2, submit!, batch_idx is 8
+Client 3 finished! Wait! It took 0.23077917098999023
+Client 3, submit!, batch_idx is 8, num iter is 20
+Client 3, submit!, batch_idx is 8
+Client 0 finished! Wait! It took 0.23013687133789062
+Client 0, submit!, batch_idx is 9, num iter is 20
+Client 0, submit!, batch_idx is 9
+Client 2 finished! Wait! It took 0.22606587409973145
+Client 2, submit!, batch_idx is 9, num iter is 20
+Client 2, submit!, batch_idx is 9
+Client 1 finished! Wait! It took 0.23192596435546875
+Client 1, submit!, batch_idx is 9, num iter is 20
+Client 1, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.22554636001586914
+Client 3, submit!, batch_idx is 9, num iter is 20
+Client 3, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.22571897506713867
+Client 2 finished! Wait! It took 0.22860383987426758
+Client 1 finished! Wait! It took 0.22766685485839844
+Client 0 finished! Wait! It took 0.22983551025390625
+Client 0, submit!, batch_idx is 10, num iter is 20
+Client 0, submit!, batch_idx is 10
+call schedule
+Client 3, submit!, batch_idx is 10, num iter is 20
+Client 3, submit!, batch_idx is 10
+Client 2, submit!, batch_idx is 10, num iter is 20
+Client 2, submit!, batch_idx is 10
+Client 1, submit!, batch_idx is 10, num iter is 20
+Client 1, submit!, batch_idx is 10
+Client 2 finished! Wait! It took 0.22678375244140625
+Client 2, submit!, batch_idx is 11, num iter is 20
+Client 2, submit!, batch_idx is 11
+Client 0 finished! Wait! It took 0.22745180130004883
+Client 0, submit!, batch_idx is 11, num iter is 20
+Client 0, submit!, batch_idx is 11
+Client 1 finished! Wait! It took 0.22750329971313477
+Client 1, submit!, batch_idx is 11, num iter is 20
+Client 1, submit!, batch_idx is 11
+Client 3 finished! Wait! It took 0.22864317893981934
+Client 3, submit!, batch_idx is 11, num iter is 20
+Client 3, submit!, batch_idx is 11
+Client 2 finished! Wait! It took 0.4540534019470215
+Client 2, submit!, batch_idx is 12, num iter is 20
+Client 2, submit!, batch_idx is 12
+Client 1 finished! Wait! It took 0.4542219638824463
+Client 1, submit!, batch_idx is 12, num iter is 20
+Client 1, submit!, batch_idx is 12
+Client 3 finished! Wait! It took 0.4566464424133301
+Client 3, submit!, batch_idx is 12, num iter is 20
+Client 3, submit!, batch_idx is 12
+Client 0 finished! Wait! It took 0.45676159858703613
+Client 0, submit!, batch_idx is 12, num iter is 20
+Client 0, submit!, batch_idx is 12
+Client 2 finished! Wait! It took 0.5077025890350342
+Client 2, submit!, batch_idx is 13, num iter is 20
+Client 2, submit!, batch_idx is 13
+Client 0 finished! Wait! It took 0.509005069732666
+Client 0, submit!, batch_idx is 13, num iter is 20
+Client 0, submit!, batch_idx is 13
+Client 3 finished! Wait! It took 0.5090126991271973
+Client 3, submit!, batch_idx is 13, num iter is 20
+Client 3, submit!, batch_idx is 13
+Client 1 finished! Wait! It took 0.5112528800964355
+Client 1, submit!, batch_idx is 13, num iter is 20
+Client 1, submit!, batch_idx is 13
+Client 2 finished! Wait! It took 0.6474199295043945
+Client 2, submit!, batch_idx is 14, num iter is 20
+Client 2, submit!, batch_idx is 14
+Client 3 finished! Wait! It took 0.6484310626983643
+Client 3, submit!, batch_idx is 14, num iter is 20
+Client 3, submit!, batch_idx is 14
+Client 1 finished! Wait! It took 0.6495532989501953
+Client 1, submit!, batch_idx is 14, num iter is 20
+Client 1, submit!, batch_idx is 14
+Client 0 finished! Wait! It took 0.650937557220459
+Client 0, submit!, batch_idx is 14, num iter is 20
+Client 0, submit!, batch_idx is 14
+Client 2 finished! Wait! It took 0.8637919425964355
+Client 2, submit!, batch_idx is 15, num iter is 20
+Client 2, submit!, batch_idx is 15
+Client 1 finished! Wait! It took 0.8641777038574219
+Client 1, submit!, batch_idx is 15, num iter is 20
+Client 1, submit!, batch_idx is 15
+Client 0 finished! Wait! It took 0.8655695915222168
+Client 0, submit!, batch_idx is 15, num iter is 20
+Client 0, submit!, batch_idx is 15
+Client 3 finished! Wait! It took 0.865619421005249
+Client 3, submit!, batch_idx is 15, num iter is 20
+Client 3, submit!, batch_idx is 15
+Client 2 finished! Wait! It took 1.0829074382781982
+Client 2, submit!, batch_idx is 16, num iter is 20
+Client 2, submit!, batch_idx is 16
+Client 1 finished! Wait! It took 1.0833451747894287
+Client 1, submit!, batch_idx is 16, num iter is 20
+Client 1, submit!, batch_idx is 16
+Client 0 finished! Wait! It took 1.0834648609161377
+Client 0, submit!, batch_idx is 16, num iter is 20
+Client 0, submit!, batch_idx is 16
+Client 3 finished! Wait! It took 1.0849111080169678
+Client 3, submit!, batch_idx is 16, num iter is 20
+Client 3, submit!, batch_idx is 16
+Client 2 finished! Wait! It took 1.300126314163208
+Client 2, submit!, batch_idx is 17, num iter is 20
+Client 2, submit!, batch_idx is 17
+Client 0 finished! Wait! It took 1.3012373447418213
+Client 0, submit!, batch_idx is 17, num iter is 20
+Client 0, submit!, batch_idx is 17
+Client 1 finished! Wait! It took 1.3018114566802979
+Client 1, submit!, batch_idx is 17, num iter is 20
+Client 1, submit!, batch_idx is 17
+Client 3 finished! Wait! It took 1.3020403385162354
+Client 3, submit!, batch_idx is 17, num iter is 20
+Client 3, submit!, batch_idx is 17
+Client 3 finished! Wait! It took 1.5099153518676758
+Client 3, submit!, batch_idx is 18, num iter is 20
+Client 3, submit!, batch_idx is 18
+Client 2 finished! Wait! It took 1.5102019309997559
+Client 2, submit!, batch_idx is 18, num iter is 20
+Client 2, submit!, batch_idx is 18
+Client 0 finished! Wait! It took 1.5119967460632324
+Client 0, submit!, batch_idx is 18, num iter is 20
+Client 0, submit!, batch_idx is 18
+Client 1 finished! Wait! It took 1.5122435092926025
+Client 1, submit!, batch_idx is 18, num iter is 20
+Client 1, submit!, batch_idx is 18
+Client 2 finished! Wait! It took 1.7006871700286865
+Client 2, submit!, batch_idx is 19, num iter is 20
+Client 2, submit!, batch_idx is 19
+Client 0 finished! Wait! It took 1.7017219066619873
+Client 0, submit!, batch_idx is 19, num iter is 20
+Client 0, submit!, batch_idx is 19
+Client 3 finished! Wait! It took 1.7030107975006104
+Client 3, submit!, batch_idx is 19, num iter is 20
+Client 3, submit!, batch_idx is 19
+Client 1 finished! Wait! It took 1.704538106918335
+Client 1, submit!, batch_idx is 19, num iter is 20
+Client 1, submit!, batch_idx is 19
+Client 2 finished! Wait! It took 1.8993499279022217
+Client 2 at barrier! 
+Client 2 Total execution time: 4.559271812438965 seconds
+Client 0 finished! Wait! It took 1.8995661735534668
+Client 0 at barrier! 
+Client 0 Total execution time: 4.629641771316528 seconds
+Client 1 finished! Wait! It took 1.9004685878753662
+Client 1 at barrier! 
+Client 1 Total execution time: 4.5752623081207275 seconds
+Client 3 finished! Wait! It took 1.9008619785308838
+Client 3 at barrier! 
+Client 3 Total execution time: 4.568795680999756 seconds
+Client 3 finshed 10 iterations
+Client 0 finshed 10 iterations
+Client 2 finshed 10 iterations
+Client 1 finshed 10 iterations
+Total time is 2.2827134132385254
+Client 0 finished! p50: 0.9745172262191772 sec, p95: 1.8105362534523008 sec, p99: 1.8817601895332337 sec, average: 1.0207712650299072
+
+Client 3 finished! p50: 0.9752652645111084 sec, p95: 1.8118289470672606 sec, p99: 1.883055372238159 sec, average: 1.0209092378616333
+
+Client 1 finished! p50: 0.9737614393234253 sec, p95: 1.8122998714447018 sec, p99: 1.8828348445892333 sec, average: 1.0209115982055663
+
+Client 2 finished! p50: 0.9733496904373169 sec, p95: 1.8099516868591305 sec, p99: 1.8814702796936036 sec, average: 1.0193024396896362
+
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Train threads joined!
+Scheduler thread joined!
+--------- All threads joined!
+Total energy consumed: 0.56 kJ
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd
+----------- SIZE: 3298
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd
+----------- SIZE: 3298
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd
+----------- SIZE: 3298
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/densenet201_8_fwd
+----------- SIZE: 3298
+buffer size is 0
+buffer size is 0
+buffer size is 0
+buffer size is 0
+entered sched func!
+exited sched func!
+entered sched func!
+exited sched func!
+entered sched func!
+Client 2, Total loop took 2.280000 sec
+Client 0, Total loop took 2.280000 sec
+Client 1, Total loop took 2.281000 sec
+Client 3, Total loop took 2.282000 sec
+Total loop took 2.282000 sec
+exited sched func!
+config_files/new_baselines/Dnet_8_Dnet_8_Dnet_8_Dnet_8.json
+  0
+in launch_jobs
+[{'arch': 'vgg19', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd', 'num_kernels': 296, 'num_iters': 20, 'args': {'model_name': 'vgg19', 'batchsize': 8, 'rps': 80, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'vgg19', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd', 'num_kernels': 296, 'num_iters': 20, 'args': {'model_name': 'vgg19', 'batchsize': 8, 'rps': 80, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'vgg19', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd', 'num_kernels': 296, 'num_iters': 20, 'args': {'model_name': 'vgg19', 'batchsize': 8, 'rps': 80, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'vgg19', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd', 'num_kernels': 296, 'num_iters': 20, 'args': {'model_name': 'vgg19', 'batchsize': 8, 'rps': 80, 'uniform': True, 'dummy_data': True, 'train': False}}]
+4
+1.12.0a0+git67ece03
+vgg19 8 0 [<threading.Barrier object at 0x7fcb49e65bb0>, <threading.Barrier object at 0x7fcb49e65e50>, <threading.Barrier object at 0x7fcb49e65df0>, <threading.Barrier object at 0x7fcb49e75070>] 0
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+vgg19 8 0 [<threading.Barrier object at 0x7fcb49e65bb0>, <threading.Barrier object at 0x7fcb49e65e50>, <threading.Barrier object at 0x7fcb49e65df0>, <threading.Barrier object at 0x7fcb49e75070>] 1
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+vgg19 8 0 [<threading.Barrier object at 0x7fcb49e65bb0>, <threading.Barrier object at 0x7fcb49e65e50>, <threading.Barrier object at 0x7fcb49e65df0>, <threading.Barrier object at 0x7fcb49e75070>] 2
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+vgg19 8 0 [<threading.Barrier object at 0x7fcb49e65bb0>, <threading.Barrier object at 0x7fcb49e65e50>, <threading.Barrier object at 0x7fcb49e65df0>, <threading.Barrier object at 0x7fcb49e75070>] 3
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+[206801, 206802, 206803, 206804]
+before start !!!!!!!!!!!!!!
+REEF IS False, SEQUENTIAL IS False
+[False, False, False, False]
+['vgg19', 'vgg19', 'vgg19', 'vgg19'] [b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd'] [206801, 206802, 206803, 206804]
+Num clients is 4
+before starting, profile is True
+-------------- thread id:   206801
+-------------- thread id:   206804
+-------------- thread id:   206802
+-------------- thread id:   206803
+Enter loop!
+Start epoch:  0
+Client 0, submit!, batch_idx is 0, num iter is 20
+Client 0, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 1, submit!, batch_idx is 0, num iter is 20
+Client 1, submit!, batch_idx is 0
+Client 0 finished! Wait! It took 0.17503142356872559
+Client 1 finished! Wait! It took 0.1549983024597168
+Enter loop!
+Start epoch:  0
+Client 2, submit!, batch_idx is 0, num iter is 20
+Client 2, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 3, submit!, batch_idx is 0, num iter is 20
+Client 3, submit!, batch_idx is 0
+Client 2 finished! Wait! It took 0.13652276992797852
+wait here
+Client 3 finished! Wait! It took 0.1166086196899414
+Client 3, submit!, batch_idx is 1, num iter is 20
+Client 3, submit!, batch_idx is 1
+done!
+Client 0, submit!, batch_idx is 1, num iter is 20
+Client 0, submit!, batch_idx is 1
+Client 2, submit!, batch_idx is 1, num iter is 20
+Client 2, submit!, batch_idx is 1
+Client 1, submit!, batch_idx is 1, num iter is 20
+Client 1, submit!, batch_idx is 1
+Client 1 finished! Wait! It took 0.503201961517334
+Client 1, submit!, batch_idx is 2, num iter is 20
+Client 1, submit!, batch_idx is 2
+Client 2 finished! Wait! It took 0.23203587532043457
+Client 2, submit!, batch_idx is 2, num iter is 20
+Client 2, submit!, batch_idx is 2
+Client 0 finished! Wait! It took 0.5382895469665527
+Client 0, submit!, batch_idx is 2, num iter is 20
+Client 0, submit!, batch_idx is 2
+Client 3 finished! Wait! It took 0.3049962520599365
+Client 3, submit!, batch_idx is 2, num iter is 20
+Client 3, submit!, batch_idx is 2
+Client 0 finished! Wait! It took 0.18717527389526367
+Client 0, submit!, batch_idx is 3, num iter is 20
+Client 0, submit!, batch_idx is 3
+Client 1 finished! Wait! It took 0.20853734016418457
+Client 1, submit!, batch_idx is 3, num iter is 20
+Client 1, submit!, batch_idx is 3
+Client 2 finished! Wait! It took 0.2744936943054199
+Client 2, submit!, batch_idx is 3, num iter is 20
+Client 2, submit!, batch_idx is 3
+Client 3 finished! Wait! It took 0.25136899948120117
+Client 3, submit!, batch_idx is 3, num iter is 20
+Client 3, submit!, batch_idx is 3
+Client 1 finished! Wait! It took 0.1766366958618164
+Client 1, submit!, batch_idx is 4, num iter is 20
+Client 1, submit!, batch_idx is 4
+Client 0 finished! Wait! It took 0.19332027435302734
+Client 0, submit!, batch_idx is 4, num iter is 20
+Client 0, submit!, batch_idx is 4
+Client 3 finished! Wait! It took 0.15987062454223633
+Client 3, submit!, batch_idx is 4, num iter is 20
+Client 3, submit!, batch_idx is 4
+Client 1 finished! Wait! It took 0.1608414649963379
+Client 1, submit!, batch_idx is 5, num iter is 20
+Client 1, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.3007619380950928
+Client 2, submit!, batch_idx is 4, num iter is 20
+Client 2, submit!, batch_idx is 4
+Client 0 finished! Wait! It took 0.2701394557952881
+Client 0, submit!, batch_idx is 5, num iter is 20
+Client 0, submit!, batch_idx is 5
+Client 1 finished! Wait! It took 0.20562076568603516
+Client 1, submit!, batch_idx is 6, num iter is 20
+Client 1, submit!, batch_idx is 6
+Client 3 finished! Wait! It took 0.23827004432678223
+Client 3, submit!, batch_idx is 5, num iter is 20
+Client 3, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.2609877586364746
+Client 2, submit!, batch_idx is 5, num iter is 20
+Client 2, submit!, batch_idx is 5
+Client 0 finished! Wait! It took 0.23662495613098145
+Client 0, submit!, batch_idx is 6, num iter is 20
+Client 0, submit!, batch_idx is 6
+Client 1 finished! Wait! It took 0.1963636875152588
+Client 1, submit!, batch_idx is 7, num iter is 20
+Client 1, submit!, batch_idx is 7
+Client 3 finished! Wait! It took 0.20474028587341309
+Client 3, submit!, batch_idx is 6, num iter is 20
+Client 3, submit!, batch_idx is 6
+Client 2 finished! Wait! It took 0.24140548706054688
+Client 2, submit!, batch_idx is 6, num iter is 20
+Client 2, submit!, batch_idx is 6
+Client 0 finished! Wait! It took 0.1840226650238037
+Client 0, submit!, batch_idx is 7, num iter is 20
+Client 0, submit!, batch_idx is 7
+Client 3 finished! Wait! It took 0.16858816146850586
+Client 3, submit!, batch_idx is 7, num iter is 20
+Client 3, submit!, batch_idx is 7
+Client 1 finished! Wait! It took 0.2653815746307373
+Client 1, submit!, batch_idx is 8, num iter is 20
+Client 1, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.19627952575683594
+Client 2, submit!, batch_idx is 7, num iter is 20
+Client 2, submit!, batch_idx is 7
+Client 0 finished! Wait! It took 0.2489457130432129
+Client 0, submit!, batch_idx is 8, num iter is 20
+Client 0, submit!, batch_idx is 8
+Client 3 finished! Wait! It took 0.2087087631225586
+Client 3, submit!, batch_idx is 8, num iter is 20
+Client 3, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.17070269584655762
+Client 2, submit!, batch_idx is 8, num iter is 20
+Client 2, submit!, batch_idx is 8
+Client 1 finished! Wait! It took 0.2638378143310547
+Client 1, submit!, batch_idx is 9, num iter is 20
+Client 1, submit!, batch_idx is 9
+Client 0 finished! Wait! It took 0.19208693504333496
+Client 0, submit!, batch_idx is 9, num iter is 20
+Client 0, submit!, batch_idx is 9
+Client 2 finished! Wait! It took 0.18036293983459473
+Client 2, submit!, batch_idx is 9, num iter is 20
+Client 2, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.2903439998626709
+Client 3, submit!, batch_idx is 9, num iter is 20
+Client 3, submit!, batch_idx is 9
+Client 1 finished! Wait! It took 0.1996474266052246
+Client 0 finished! Wait! It took 0.23775100708007812
+Client 2 finished! Wait! It took 0.14373421669006348
+Client 3 finished! Wait! It took 0.15724897384643555
+Client 3, submit!, batch_idx is 10, num iter is 20
+Client 3, submit!, batch_idx is 10
+call schedule
+Client 1, submit!, batch_idx is 10, num iter is 20
+Client 1, submit!, batch_idx is 10
+Client 0, submit!, batch_idx is 10, num iter is 20
+Client 0, submit!, batch_idx is 10
+Client 2, submit!, batch_idx is 10, num iter is 20
+Client 2, submit!, batch_idx is 10
+Client 1 finished! Wait! It took 0.1934983730316162
+Client 1, submit!, batch_idx is 11, num iter is 20
+Client 1, submit!, batch_idx is 11
+Client 2 finished! Wait! It took 0.20090293884277344
+Client 2, submit!, batch_idx is 11, num iter is 20
+Client 2, submit!, batch_idx is 11
+Client 3 finished! Wait! It took 0.21655583381652832
+Client 3, submit!, batch_idx is 11, num iter is 20
+Client 3, submit!, batch_idx is 11
+Client 0 finished! Wait! It took 0.30578136444091797
+Client 0, submit!, batch_idx is 11, num iter is 20
+Client 0, submit!, batch_idx is 11
+Client 2 finished! Wait! It took 0.4068412780761719
+Client 2, submit!, batch_idx is 12, num iter is 20
+Client 2, submit!, batch_idx is 12
+Client 3 finished! Wait! It took 0.4116067886352539
+Client 3, submit!, batch_idx is 12, num iter is 20
+Client 3, submit!, batch_idx is 12
+Client 1 finished! Wait! It took 0.41921544075012207
+Client 1, submit!, batch_idx is 12, num iter is 20
+Client 1, submit!, batch_idx is 12
+Client 2 finished! Wait! It took 0.4026472568511963
+Client 2, submit!, batch_idx is 13, num iter is 20
+Client 2, submit!, batch_idx is 13
+Client 1 finished! Wait! It took 0.4085557460784912
+Client 1, submit!, batch_idx is 13, num iter is 20
+Client 1, submit!, batch_idx is 13
+Client 0 finished! Wait! It took 0.5965070724487305
+Client 0, submit!, batch_idx is 12, num iter is 20
+Client 0, submit!, batch_idx is 12
+Client 3 finished! Wait! It took 0.50640869140625
+Client 3, submit!, batch_idx is 13, num iter is 20
+Client 3, submit!, batch_idx is 13
+Client 2 finished! Wait! It took 0.5115377902984619
+Client 2, submit!, batch_idx is 14, num iter is 20
+Client 2, submit!, batch_idx is 14
+Client 1 finished! Wait! It took 0.5146956443786621
+Client 1, submit!, batch_idx is 14, num iter is 20
+Client 1, submit!, batch_idx is 14
+Client 0 finished! Wait! It took 0.6722705364227295
+Client 0, submit!, batch_idx is 13, num iter is 20
+Client 0, submit!, batch_idx is 13
+Client 2 finished! Wait! It took 0.674593448638916
+Client 2, submit!, batch_idx is 15, num iter is 20
+Client 2, submit!, batch_idx is 15
+Client 3 finished! Wait! It took 0.6871368885040283
+Client 3, submit!, batch_idx is 14, num iter is 20
+Client 3, submit!, batch_idx is 14
+Client 1 finished! Wait! It took 0.7326931953430176
+Client 1, submit!, batch_idx is 15, num iter is 20
+Client 1, submit!, batch_idx is 15
+Client 3 finished! Wait! It took 0.8506143093109131
+Client 3, submit!, batch_idx is 15, num iter is 20
+Client 3, submit!, batch_idx is 15
+Client 0 finished! Wait! It took 0.8763258457183838
+Client 0, submit!, batch_idx is 14, num iter is 20
+Client 0, submit!, batch_idx is 14
+Client 2 finished! Wait! It took 0.8792450428009033
+Client 2, submit!, batch_idx is 16, num iter is 20
+Client 2, submit!, batch_idx is 16
+Client 1 finished! Wait! It took 0.9504055976867676
+Client 1, submit!, batch_idx is 16, num iter is 20
+Client 1, submit!, batch_idx is 16
+Client 0 finished! Wait! It took 1.0443048477172852
+Client 0, submit!, batch_idx is 15, num iter is 20
+Client 0, submit!, batch_idx is 15
+Client 3 finished! Wait! It took 1.0736668109893799
+Client 3, submit!, batch_idx is 16, num iter is 20
+Client 3, submit!, batch_idx is 16
+Client 2 finished! Wait! It took 1.0896272659301758
+Client 2, submit!, batch_idx is 17, num iter is 20
+Client 2, submit!, batch_idx is 17
+Client 0 finished! Wait! It took 1.216639757156372
+Client 0, submit!, batch_idx is 16, num iter is 20
+Client 0, submit!, batch_idx is 16
+Client 1 finished! Wait! It took 1.2211430072784424
+Client 1, submit!, batch_idx is 17, num iter is 20
+Client 1, submit!, batch_idx is 17
+Client 3 finished! Wait! It took 1.2591922283172607
+Client 3, submit!, batch_idx is 17, num iter is 20
+Client 3, submit!, batch_idx is 17
+Client 2 finished! Wait! It took 1.3186581134796143
+Client 2, submit!, batch_idx is 18, num iter is 20
+Client 2, submit!, batch_idx is 18
+Client 1 finished! Wait! It took 1.3926191329956055
+Client 1, submit!, batch_idx is 18, num iter is 20
+Client 1, submit!, batch_idx is 18
+Client 0 finished! Wait! It took 1.428175926208496
+Client 0, submit!, batch_idx is 17, num iter is 20
+Client 0, submit!, batch_idx is 17
+Client 3 finished! Wait! It took 1.483889102935791
+Client 3, submit!, batch_idx is 18, num iter is 20
+Client 3, submit!, batch_idx is 18
+Client 2 finished! Wait! It took 1.5404324531555176
+Client 2, submit!, batch_idx is 19, num iter is 20
+Client 2, submit!, batch_idx is 19
+Client 1 finished! Wait! It took 1.5524940490722656
+Client 1, submit!, batch_idx is 19, num iter is 20
+Client 1, submit!, batch_idx is 19
+Client 0 finished! Wait! It took 1.6267046928405762
+Client 0, submit!, batch_idx is 18, num iter is 20
+Client 0, submit!, batch_idx is 18
+Client 1 finished! Wait! It took 1.6817481517791748
+Client 1 at barrier! 
+Client 1 Total execution time: 4.520785570144653 seconds
+Client 3 finished! Wait! It took 1.7347924709320068
+Client 3, submit!, batch_idx is 19, num iter is 20
+Client 3, submit!, batch_idx is 19
+Client 2 finished! Wait! It took 1.7283437252044678
+Client 2 at barrier! 
+Client 2 Total execution time: 4.270780086517334 seconds
+Client 0 finished! Wait! It took 1.7898080348968506
+Client 0, submit!, batch_idx is 19, num iter is 20
+Client 0, submit!, batch_idx is 19
+Client 3 finished! Wait! It took 1.8152382373809814
+Client 3 at barrier! 
+Client 3 Total execution time: 4.297289609909058 seconds
+Client 0 finished! Wait! It took 1.8596270084381104
+Client 0 at barrier! 
+Client 0 Total execution time: 4.738572359085083 seconds
+Client 0 finshed 10 iterations
+Client 3 finshed 10 iterations
+Total time is 2.2418150901794434
+Client 3 finished! p50: 0.9621405601501465 sec, p95: 1.7790376424789427 sec, p99: 1.8079981184005738 sec, average: 1.0039101362228393
+
+Client 1 finshed 10 iterations
+Client 2 finshed 10 iterations
+Client 2 finished! p50: 0.7769192457199097 sec, p95: 1.64378365278244 sec, p99: 1.7114317107200623 sec, average: 0.8752829313278199
+
+Client 0 finished! p50: 1.1304723024368286 sec, p95: 1.8282084703445434 sec, p99: 1.853343300819397 sec, average: 1.1416145086288452
+
+Client 1 finished! p50: 0.8415493965148926 sec, p95: 1.6235838055610656 sec, p99: 1.670115282535553 sec, average: 0.9067068338394165
+
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Train threads joined!
+Scheduler thread joined!
+--------- All threads joined!
+Total energy consumed: 0.72 kJ
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd
+----------- SIZE: 299
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd
+----------- SIZE: 299
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd
+----------- SIZE: 299
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/vgg19_8_fwd
+----------- SIZE: 299
+buffer size is 0
+buffer size is 0
+buffer size is 0
+buffer size is 0
+entered sched func!
+exited sched func!
+entered sched func!
+exited sched func!
+entered sched func!
+Client 1, Total loop took 2.062000 sec
+Client 2, Total loop took 2.109000 sec
+Client 3, Total loop took 2.196000 sec
+Client 0, Total loop took 2.240000 sec
+Total loop took 2.241000 sec
+exited sched func!
+config_files/new_baselines/Vnet_8_Vnet_8_Vnet_8_Vnet_8.json
+  0
+in launch_jobs
+[{'arch': 'mobilenet_v2', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd', 'num_kernels': 1354, 'num_iters': 20, 'args': {'model_name': 'mobilenet_v2', 'batchsize': 32, 'rps': 80, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'mobilenet_v2', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd', 'num_kernels': 1354, 'num_iters': 20, 'args': {'model_name': 'mobilenet_v2', 'batchsize': 32, 'rps': 80, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'mobilenet_v2', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd', 'num_kernels': 1354, 'num_iters': 20, 'args': {'model_name': 'mobilenet_v2', 'batchsize': 32, 'rps': 80, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'mobilenet_v2', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd', 'num_kernels': 1354, 'num_iters': 20, 'args': {'model_name': 'mobilenet_v2', 'batchsize': 32, 'rps': 80, 'uniform': True, 'dummy_data': True, 'train': False}}]
+4
+1.12.0a0+git67ece03
+mobilenet_v2 32 0 [<threading.Barrier object at 0x7fc73939bbb0>, <threading.Barrier object at 0x7fc73939be50>, <threading.Barrier object at 0x7fc73939bdf0>, <threading.Barrier object at 0x7fc7393ab070>] 0
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+mobilenet_v2 32 0 [<threading.Barrier object at 0x7fc73939bbb0>, <threading.Barrier object at 0x7fc73939be50>, <threading.Barrier object at 0x7fc73939bdf0>, <threading.Barrier object at 0x7fc7393ab070>] 1
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+mobilenet_v2 32 0 [<threading.Barrier object at 0x7fc73939bbb0>, <threading.Barrier object at 0x7fc73939be50>, <threading.Barrier object at 0x7fc73939bdf0>, <threading.Barrier object at 0x7fc7393ab070>] 2
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+mobilenet_v2 32 0 [<threading.Barrier object at 0x7fc73939bbb0>, <threading.Barrier object at 0x7fc73939be50>, <threading.Barrier object at 0x7fc73939bdf0>, <threading.Barrier object at 0x7fc7393ab070>] 3
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+[206836, 206837, 206838, 206839]
+before start !!!!!!!!!!!!!!
+REEF IS False, SEQUENTIAL IS False
+[False, False, False, False]
+['mobilenet_v2', 'mobilenet_v2', 'mobilenet_v2', 'mobilenet_v2'] [b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd'] [206836, 206837, 206838, 206839]
+Num clients is 4
+before starting, profile is True
+-------------- thread id:   206836
+-------------- thread id:   206839
+-------------- thread id:   206838
+-------------- thread id:   206837
+Enter loop!
+Start epoch:  0
+Client 2, submit!, batch_idx is 0, num iter is 20
+Client 2, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 0, submit!, batch_idx is 0, num iter is 20
+Client 0, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 3, submit!, batch_idx is 0, num iter is 20
+Client 3, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 1, submit!, batch_idx is 0, num iter is 20
+Client 1, submit!, batch_idx is 0
+Client 2 finished! Wait! It took 0.16356897354125977
+Client 0 finished! Wait! It took 0.15029168128967285
+Client 3 finished! Wait! It took 0.1406233310699463
+Client 1 finished! Wait! It took 0.1267702579498291
+wait here
+done!
+Client 1, submit!, batch_idx is 1, num iter is 20
+Client 1, submit!, batch_idx is 1
+Client 3, submit!, batch_idx is 1, num iter is 20
+Client 3, submit!, batch_idx is 1
+Client 0, submit!, batch_idx is 1, num iter is 20
+Client 0, submit!, batch_idx is 1
+Client 2, submit!, batch_idx is 1, num iter is 20
+Client 2, submit!, batch_idx is 1
+Client 3 finished! Wait! It took 0.11412739753723145
+Client 3, submit!, batch_idx is 2, num iter is 20
+Client 3, submit!, batch_idx is 2
+Client 0 finished! Wait! It took 0.11819720268249512
+Client 0, submit!, batch_idx is 2, num iter is 20
+Client 0, submit!, batch_idx is 2
+Client 1 finished! Wait! It took 0.11951565742492676
+Client 1, submit!, batch_idx is 2, num iter is 20
+Client 1, submit!, batch_idx is 2
+Client 2 finished! Wait! It took 0.16186213493347168
+Client 2, submit!, batch_idx is 2, num iter is 20
+Client 2, submit!, batch_idx is 2
+Client 3 finished! Wait! It took 0.11002373695373535
+Client 3, submit!, batch_idx is 3, num iter is 20
+Client 3, submit!, batch_idx is 3
+Client 0 finished! Wait! It took 0.11629986763000488
+Client 0, submit!, batch_idx is 3, num iter is 20
+Client 0, submit!, batch_idx is 3
+Client 1 finished! Wait! It took 0.12766671180725098
+Client 1, submit!, batch_idx is 3, num iter is 20
+Client 1, submit!, batch_idx is 3
+Client 2 finished! Wait! It took 0.12009620666503906
+Client 2, submit!, batch_idx is 3, num iter is 20
+Client 2, submit!, batch_idx is 3
+Client 3 finished! Wait! It took 0.1050260066986084
+Client 3, submit!, batch_idx is 4, num iter is 20
+Client 3, submit!, batch_idx is 4
+Client 0 finished! Wait! It took 0.11439633369445801
+Client 0, submit!, batch_idx is 4, num iter is 20
+Client 0, submit!, batch_idx is 4
+Client 1 finished! Wait! It took 0.1179814338684082
+Client 1, submit!, batch_idx is 4, num iter is 20
+Client 1, submit!, batch_idx is 4
+Client 2 finished! Wait! It took 0.12373566627502441
+Client 2, submit!, batch_idx is 4, num iter is 20
+Client 2, submit!, batch_idx is 4
+Client 3 finished! Wait! It took 0.11864113807678223
+Client 3, submit!, batch_idx is 5, num iter is 20
+Client 3, submit!, batch_idx is 5
+Client 0 finished! Wait! It took 0.1197662353515625
+Client 0, submit!, batch_idx is 5, num iter is 20
+Client 0, submit!, batch_idx is 5
+Client 1 finished! Wait! It took 0.09612512588500977
+Client 1, submit!, batch_idx is 5, num iter is 20
+Client 1, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.10521268844604492
+Client 2, submit!, batch_idx is 5, num iter is 20
+Client 2, submit!, batch_idx is 5
+Client 3 finished! Wait! It took 0.1259784698486328
+Client 3, submit!, batch_idx is 6, num iter is 20
+Client 3, submit!, batch_idx is 6
+Client 0 finished! Wait! It took 0.11021661758422852
+Client 0, submit!, batch_idx is 6, num iter is 20
+Client 0, submit!, batch_idx is 6
+Client 1 finished! Wait! It took 0.13166236877441406
+Client 1, submit!, batch_idx is 6, num iter is 20
+Client 1, submit!, batch_idx is 6
+Client 2 finished! Wait! It took 0.1175992488861084
+Client 2, submit!, batch_idx is 6, num iter is 20
+Client 2, submit!, batch_idx is 6
+Client 0 finished! Wait! It took 0.10402536392211914
+Client 0, submit!, batch_idx is 7, num iter is 20
+Client 0, submit!, batch_idx is 7
+Client 3 finished! Wait! It took 0.10601091384887695
+Client 3, submit!, batch_idx is 7, num iter is 20
+Client 3, submit!, batch_idx is 7
+Client 1 finished! Wait! It took 0.12609124183654785
+Client 1, submit!, batch_idx is 7, num iter is 20
+Client 1, submit!, batch_idx is 7
+Client 2 finished! Wait! It took 0.13263607025146484
+Client 2, submit!, batch_idx is 7, num iter is 20
+Client 2, submit!, batch_idx is 7
+Client 3 finished! Wait! It took 0.1074981689453125
+Client 3, submit!, batch_idx is 8, num iter is 20
+Client 3, submit!, batch_idx is 8
+Client 0 finished! Wait! It took 0.10967040061950684
+Client 0, submit!, batch_idx is 8, num iter is 20
+Client 0, submit!, batch_idx is 8
+Client 1 finished! Wait! It took 0.11752820014953613
+Client 1, submit!, batch_idx is 8, num iter is 20
+Client 1, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.12250733375549316
+Client 2, submit!, batch_idx is 8, num iter is 20
+Client 2, submit!, batch_idx is 8
+Client 3 finished! Wait! It took 0.1154947280883789
+Client 3, submit!, batch_idx is 9, num iter is 20
+Client 3, submit!, batch_idx is 9
+Client 0 finished! Wait! It took 0.12233638763427734
+Client 0, submit!, batch_idx is 9, num iter is 20
+Client 0, submit!, batch_idx is 9
+Client 1 finished! Wait! It took 0.11515307426452637
+Client 1, submit!, batch_idx is 9, num iter is 20
+Client 1, submit!, batch_idx is 9
+Client 2 finished! Wait! It took 0.11574912071228027
+Client 2, submit!, batch_idx is 9, num iter is 20
+Client 2, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.11035823822021484
+Client 0 finished! Wait! It took 0.110595703125
+Client 1 finished! Wait! It took 0.08790087699890137
+Client 2 finished! Wait! It took 0.06855654716491699
+Client 2, submit!, batch_idx is 10, num iter is 20
+Client 2, submit!, batch_idx is 10
+call schedule
+Client 1, submit!, batch_idx is 10, num iter is 20
+Client 1, submit!, batch_idx is 10
+Client 0, submit!, batch_idx is 10, num iter is 20
+Client 0, submit!, batch_idx is 10
+Client 3, submit!, batch_idx is 10, num iter is 20
+Client 3, submit!, batch_idx is 10
+Client 3 finished! Wait! It took 0.10818648338317871
+Client 3, submit!, batch_idx is 11, num iter is 20
+Client 3, submit!, batch_idx is 11
+Client 0 finished! Wait! It took 0.10869336128234863
+Client 0, submit!, batch_idx is 11, num iter is 20
+Client 0, submit!, batch_idx is 11
+Client 1 finished! Wait! It took 0.11841440200805664
+Client 1, submit!, batch_idx is 11, num iter is 20
+Client 1, submit!, batch_idx is 11
+Client 2 finished! Wait! It took 0.14580631256103516
+Client 2, submit!, batch_idx is 11, num iter is 20
+Client 2, submit!, batch_idx is 11
+Client 0 finished! Wait! It took 0.21155524253845215
+Client 0, submit!, batch_idx is 12, num iter is 20
+Client 0, submit!, batch_idx is 12
+Client 3 finished! Wait! It took 0.22387146949768066
+Client 3, submit!, batch_idx is 12, num iter is 20
+Client 3, submit!, batch_idx is 12
+Client 1 finished! Wait! It took 0.24730229377746582
+Client 1, submit!, batch_idx is 12, num iter is 20
+Client 1, submit!, batch_idx is 12
+Client 2 finished! Wait! It took 0.25969696044921875
+Client 2, submit!, batch_idx is 12, num iter is 20
+Client 2, submit!, batch_idx is 12
+Client 0 finished! Wait! It took 0.14100408554077148
+Client 0, submit!, batch_idx is 13, num iter is 20
+Client 0, submit!, batch_idx is 13
+Client 3 finished! Wait! It took 0.16026949882507324
+Client 3, submit!, batch_idx is 13, num iter is 20
+Client 3, submit!, batch_idx is 13
+Client 1 finished! Wait! It took 0.1939988136291504
+Client 1, submit!, batch_idx is 13, num iter is 20
+Client 1, submit!, batch_idx is 13
+Client 2 finished! Wait! It took 0.20315957069396973
+Client 2, submit!, batch_idx is 13, num iter is 20
+Client 2, submit!, batch_idx is 13
+Client 0 finished! Wait! It took 0.16968417167663574
+Client 0, submit!, batch_idx is 14, num iter is 20
+Client 0, submit!, batch_idx is 14
+Client 3 finished! Wait! It took 0.18943142890930176
+Client 3, submit!, batch_idx is 14, num iter is 20
+Client 3, submit!, batch_idx is 14
+Client 1 finished! Wait! It took 0.22191238403320312
+Client 1, submit!, batch_idx is 14, num iter is 20
+Client 1, submit!, batch_idx is 14
+Client 2 finished! Wait! It took 0.24061274528503418
+Client 2, submit!, batch_idx is 14, num iter is 20
+Client 2, submit!, batch_idx is 14
+Client 0 finished! Wait! It took 0.27503180503845215
+Client 0, submit!, batch_idx is 15, num iter is 20
+Client 0, submit!, batch_idx is 15
+Client 3 finished! Wait! It took 0.300309419631958
+Client 3, submit!, batch_idx is 15, num iter is 20
+Client 3, submit!, batch_idx is 15
+Client 1 finished! Wait! It took 0.3322920799255371
+Client 1, submit!, batch_idx is 15, num iter is 20
+Client 1, submit!, batch_idx is 15
+Client 2 finished! Wait! It took 0.34924912452697754
+Client 2, submit!, batch_idx is 15, num iter is 20
+Client 2, submit!, batch_idx is 15
+Client 0 finished! Wait! It took 0.3764157295227051
+Client 0, submit!, batch_idx is 16, num iter is 20
+Client 0, submit!, batch_idx is 16
+Client 3 finished! Wait! It took 0.4186818599700928
+Client 3, submit!, batch_idx is 16, num iter is 20
+Client 3, submit!, batch_idx is 16
+Client 1 finished! Wait! It took 0.4414215087890625
+Client 1, submit!, batch_idx is 16, num iter is 20
+Client 1, submit!, batch_idx is 16
+Client 2 finished! Wait! It took 0.44152092933654785
+Client 2, submit!, batch_idx is 16, num iter is 20
+Client 2, submit!, batch_idx is 16
+Client 0 finished! Wait! It took 0.5044734477996826
+Client 0, submit!, batch_idx is 17, num iter is 20
+Client 0, submit!, batch_idx is 17
+Client 1 finished! Wait! It took 0.5249931812286377
+Client 1, submit!, batch_idx is 17, num iter is 20
+Client 1, submit!, batch_idx is 17
+Client 3 finished! Wait! It took 0.5316007137298584
+Client 3, submit!, batch_idx is 17, num iter is 20
+Client 3, submit!, batch_idx is 17
+Client 2 finished! Wait! It took 0.5407295227050781
+Client 2, submit!, batch_idx is 17, num iter is 20
+Client 2, submit!, batch_idx is 17
+Client 0 finished! Wait! It took 0.6032257080078125
+Client 0, submit!, batch_idx is 18, num iter is 20
+Client 0, submit!, batch_idx is 18
+Client 1 finished! Wait! It took 0.6262843608856201
+Client 1, submit!, batch_idx is 18, num iter is 20
+Client 1, submit!, batch_idx is 18
+Client 3 finished! Wait! It took 0.6277980804443359
+Client 3, submit!, batch_idx is 18, num iter is 20
+Client 3, submit!, batch_idx is 18
+Client 2 finished! Wait! It took 0.6573581695556641
+Client 2, submit!, batch_idx is 18, num iter is 20
+Client 2, submit!, batch_idx is 18
+Client 0 finished! Wait! It took 0.6774723529815674
+Client 0, submit!, batch_idx is 19, num iter is 20
+Client 0, submit!, batch_idx is 19
+Client 3 finished! Wait! It took 0.6859667301177979
+Client 3, submit!, batch_idx is 19, num iter is 20
+Client 3, submit!, batch_idx is 19
+Client 1 finished! Wait! It took 0.6956787109375
+Client 1, submit!, batch_idx is 19, num iter is 20
+Client 1, submit!, batch_idx is 19
+Client 2 finished! Wait! It took 0.7691667079925537
+Client 2, submit!, batch_idx is 19, num iter is 20
+Client 2, submit!, batch_idx is 19
+Client 0 finished! Wait! It took 0.7510595321655273
+Client 0 at barrier! 
+Client 0 Total execution time: 2.3450188636779785 seconds
+Client 3 finished! Wait! It took 0.7521891593933105
+Client 3 at barrier! 
+Client 3 Total execution time: 2.33323073387146 seconds
+Client 1 finished! Wait! It took 0.7816126346588135
+Client 1 at barrier! 
+Client 1 Total execution time: 2.3424532413482666 seconds
+Client 2 finished! Wait! It took 0.7967212200164795
+Client 2 at barrier! 
+Client 2 Total execution time: 2.40956974029541 seconds
+Total time is 1.1780064105987549
+Client 2 finshed 10 iterations
+Client 1 finshed 10 iterations
+Client 3 finshed 10 iterations
+Client 0 finshed 10 iterations
+Client 3 finished! p50: 0.3594956398010254 sec, p95: 0.7223890662193297 sec, p99: 0.7462291407585144 sec, average: 0.3998304843902588
+
+Client 1 finished! p50: 0.3868567943572998 sec, p95: 0.7429423689842223 sec, p99: 0.7738785815238953 sec, average: 0.4183910369873047
+
+Client 2 finished! p50: 0.3953850269317627 sec, p95: 0.7843216896057129 sec, p99: 0.7942413139343262 sec, average: 0.44040212631225584
+
+Client 0 finished! p50: 0.3257237672805786 sec, p95: 0.7179453015327453 sec, p99: 0.744436686038971 sec, average: 0.3818615436553955
+
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Train threads joined!
+Scheduler thread joined!
+--------- All threads joined!
+Total energy consumed: 0.27 kJ
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd
+----------- SIZE: 1354
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd
+----------- SIZE: 1354
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd
+----------- SIZE: 1354
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/mobilenetv2_32_fwd
+----------- SIZE: 1354
+buffer size is 0
+buffer size is 0
+buffer size is 0
+buffer size is 0
+entered sched func!
+exited sched func!
+entered sched func!
+exited sched func!
+entered sched func!
+Client 0, Total loop took 1.132000 sec
+Client 3, Total loop took 1.133000 sec
+Client 1, Total loop took 1.162000 sec
+Client 2, Total loop took 1.177000 sec
+Total loop took 1.177000 sec
+exited sched func!
+config_files/new_baselines/Mnet_32_Mnet_32_Mnet_32_Mnet_32.json
+  0
+in launch_jobs
+[{'arch': 'vit_b_16', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd', 'num_kernels': 152, 'num_iters': 20, 'args': {'model_name': 'vit_b_16', 'batchsize': 8, 'rps': 60, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'vit_b_16', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd', 'num_kernels': 152, 'num_iters': 20, 'args': {'model_name': 'vit_b_16', 'batchsize': 8, 'rps': 60, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'vit_b_16', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd', 'num_kernels': 152, 'num_iters': 20, 'args': {'model_name': 'vit_b_16', 'batchsize': 8, 'rps': 60, 'uniform': True, 'dummy_data': True, 'train': False}}, {'arch': 'vit_b_16', 'kernel_file': '/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd', 'num_kernels': 152, 'num_iters': 20, 'args': {'model_name': 'vit_b_16', 'batchsize': 8, 'rps': 60, 'uniform': True, 'dummy_data': True, 'train': False}}]
+4
+1.12.0a0+git67ece03
+vit_b_16 8 0 [<threading.Barrier object at 0x7f66ff854c70>, <threading.Barrier object at 0x7f66ff854ee0>, <threading.Barrier object at 0x7f66ff854e80>, <threading.Barrier object at 0x7f66ff8660d0>] 0
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+vit_b_16 8 0 [<threading.Barrier object at 0x7f66ff854c70>, <threading.Barrier object at 0x7f66ff854ee0>, <threading.Barrier object at 0x7f66ff854e80>, <threading.Barrier object at 0x7f66ff8660d0>] 1
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+vit_b_16 8 0 [<threading.Barrier object at 0x7f66ff854c70>, <threading.Barrier object at 0x7f66ff854ee0>, <threading.Barrier object at 0x7f66ff854e80>, <threading.Barrier object at 0x7f66ff8660d0>] 2
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+vit_b_16 8 0 [<threading.Barrier object at 0x7f66ff854c70>, <threading.Barrier object at 0x7f66ff854ee0>, <threading.Barrier object at 0x7f66ff854e80>, <threading.Barrier object at 0x7f66ff8660d0>] 3
+SIZE is 20
+[0.0234634  0.15050607 0.06583728 0.04564713 0.00848124 0.00847981
+ 0.00299194 0.10056154 0.04595411 0.0615625  0.00103997 0.17517787
+ 0.08932148 0.01193438 0.01003395 0.01013057 0.01813769 0.03719639
+ 0.02827685 0.01721115]
+[206872, 206873, 206874, 206875]
+before start !!!!!!!!!!!!!!
+REEF IS False, SEQUENTIAL IS False
+[False, False, False, False]
+['vit_b_16', 'vit_b_16', 'vit_b_16', 'vit_b_16'] [b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd', b'/home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd'] [206872, 206873, 206874, 206875]
+Num clients is 4
+before starting, profile is True
+-------------- thread id:   206873
+-------------- thread id:   206875
+-------------- thread id:   206872
+-------------- thread id:   206874
+Enter loop!
+Start epoch:  0
+Client 1, submit!, batch_idx is 0, num iter is 20
+Client 1, submit!, batch_idx is 0
+Enter loop!
+Start epoch:  0
+Client 2, submit!, batch_idx is 0, num iter is 20
+Client 2, submit!, batch_idx is 0
+Client 1 finished! Wait! It took 0.13057446479797363
+Enter loop!
+Start epoch:  0
+Client 0, submit!, batch_idx is 0, num iter is 20
+Client 0, submit!, batch_idx is 0
+Client 2 finished! Wait! It took 0.15760016441345215
+Enter loop!
+Start epoch:  0
+Client 3, submit!, batch_idx is 0, num iter is 20
+Client 3, submit!, batch_idx is 0
+Client 0 finished! Wait! It took 0.08047747611999512
+Client 3 finished! Wait! It took 0.06412482261657715
+wait here
+done!
+Client 3, submit!, batch_idx is 1, num iter is 20
+Client 3, submit!, batch_idx is 1
+Client 0, submit!, batch_idx is 1, num iter is 20
+Client 0, submit!, batch_idx is 1
+Client 1, submit!, batch_idx is 1, num iter is 20
+Client 1, submit!, batch_idx is 1
+Client 2, submit!, batch_idx is 1, num iter is 20
+Client 2, submit!, batch_idx is 1
+Client 3 finished! Wait! It took 0.11147618293762207
+Client 3, submit!, batch_idx is 2, num iter is 20
+Client 3, submit!, batch_idx is 2
+Client 2 finished! Wait! It took 0.2414379119873047
+Client 2, submit!, batch_idx is 2, num iter is 20
+Client 2, submit!, batch_idx is 2
+Client 3 finished! Wait! It took 0.05391049385070801
+Client 3, submit!, batch_idx is 3, num iter is 20
+Client 3, submit!, batch_idx is 3
+Client 1 finished! Wait! It took 0.3750741481781006
+Client 1, submit!, batch_idx is 2, num iter is 20
+Client 1, submit!, batch_idx is 2
+Client 3 finished! Wait! It took 0.11828351020812988
+Client 3, submit!, batch_idx is 4, num iter is 20
+Client 3, submit!, batch_idx is 4
+Client 2 finished! Wait! It took 0.15822982788085938
+Client 2, submit!, batch_idx is 3, num iter is 20
+Client 2, submit!, batch_idx is 3
+Client 1 finished! Wait! It took 0.14171624183654785
+Client 1, submit!, batch_idx is 3, num iter is 20
+Client 1, submit!, batch_idx is 3
+Client 0 finished! Wait! It took 0.40987420082092285
+Client 0, submit!, batch_idx is 2, num iter is 20
+Client 0, submit!, batch_idx is 2
+Client 3 finished! Wait! It took 0.17682600021362305
+Client 3, submit!, batch_idx is 5, num iter is 20
+Client 3, submit!, batch_idx is 5
+Client 0 finished! Wait! It took 0.13303828239440918
+Client 0, submit!, batch_idx is 3, num iter is 20
+Client 0, submit!, batch_idx is 3
+Client 2 finished! Wait! It took 0.2866556644439697
+Client 2, submit!, batch_idx is 4, num iter is 20
+Client 2, submit!, batch_idx is 4
+Client 1 finished! Wait! It took 0.2174842357635498
+Client 1, submit!, batch_idx is 4, num iter is 20
+Client 1, submit!, batch_idx is 4
+Client 3 finished! Wait! It took 0.25899696350097656
+Client 3, submit!, batch_idx is 6, num iter is 20
+Client 3, submit!, batch_idx is 6
+Client 2 finished! Wait! It took 0.15399432182312012
+Client 2, submit!, batch_idx is 5, num iter is 20
+Client 2, submit!, batch_idx is 5
+Client 0 finished! Wait! It took 0.2424321174621582
+Client 0, submit!, batch_idx is 4, num iter is 20
+Client 0, submit!, batch_idx is 4
+Client 1 finished! Wait! It took 0.20770692825317383
+Client 1, submit!, batch_idx is 5, num iter is 20
+Client 1, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.093841552734375
+Client 2, submit!, batch_idx is 6, num iter is 20
+Client 2, submit!, batch_idx is 6
+Client 1 finished! Wait! It took 0.10042643547058105
+Client 1, submit!, batch_idx is 6, num iter is 20
+Client 1, submit!, batch_idx is 6
+Client 0 finished! Wait! It took 0.2093219757080078
+Client 0, submit!, batch_idx is 5, num iter is 20
+Client 0, submit!, batch_idx is 5
+Client 2 finished! Wait! It took 0.20250439643859863
+Client 2, submit!, batch_idx is 7, num iter is 20
+Client 2, submit!, batch_idx is 7
+Client 1 finished! Wait! It took 0.23372721672058105
+Client 1, submit!, batch_idx is 7, num iter is 20
+Client 1, submit!, batch_idx is 7
+Client 3 finished! Wait! It took 0.40476226806640625
+Client 3, submit!, batch_idx is 7, num iter is 20
+Client 3, submit!, batch_idx is 7
+Client 1 finished! Wait! It took 0.10534214973449707
+Client 1, submit!, batch_idx is 8, num iter is 20
+Client 1, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.20115160942077637
+Client 2, submit!, batch_idx is 8, num iter is 20
+Client 2, submit!, batch_idx is 8
+Client 0 finished! Wait! It took 0.3331458568572998
+Client 0, submit!, batch_idx is 6, num iter is 20
+Client 0, submit!, batch_idx is 6
+Client 3 finished! Wait! It took 0.18930673599243164
+Client 3, submit!, batch_idx is 8, num iter is 20
+Client 3, submit!, batch_idx is 8
+Client 2 finished! Wait! It took 0.11884069442749023
+Client 2, submit!, batch_idx is 9, num iter is 20
+Client 2, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.07563924789428711
+Client 3, submit!, batch_idx is 9, num iter is 20
+Client 3, submit!, batch_idx is 9
+Client 0 finished! Wait! It took 0.15053677558898926
+Client 0, submit!, batch_idx is 7, num iter is 20
+Client 0, submit!, batch_idx is 7
+Client 2 finished! Wait! It took 0.1529691219329834
+Client 1 finished! Wait! It took 0.3355398178100586
+Client 1, submit!, batch_idx is 9, num iter is 20
+Client 1, submit!, batch_idx is 9
+Client 3 finished! Wait! It took 0.25594186782836914
+Client 0 finished! Wait! It took 0.24419593811035156
+Client 0, submit!, batch_idx is 8, num iter is 20
+Client 0, submit!, batch_idx is 8
+Client 1 finished! Wait! It took 0.16964054107666016
+Client 0 finished! Wait! It took 0.0761270523071289
+Client 0, submit!, batch_idx is 9, num iter is 20
+Client 0, submit!, batch_idx is 9
+Client 0 finished! Wait! It took 0.0512232780456543
+call schedule
+Client 0, submit!, batch_idx is 10, num iter is 20
+Client 0, submit!, batch_idx is 10
+Client 3, submit!, batch_idx is 10, num iter is 20
+Client 3, submit!, batch_idx is 10
+Client 1, submit!, batch_idx is 10, num iter is 20
+Client 1, submit!, batch_idx is 10
+Client 2, submit!, batch_idx is 10, num iter is 20
+Client 2, submit!, batch_idx is 10
+Client 2 finished! Wait! It took 0.12048220634460449
+Client 2, submit!, batch_idx is 11, num iter is 20
+Client 2, submit!, batch_idx is 11
+Client 1 finished! Wait! It took 0.12137985229492188
+Client 1, submit!, batch_idx is 11, num iter is 20
+Client 1, submit!, batch_idx is 11
+Client 3 finished! Wait! It took 0.13166379928588867
+Client 3, submit!, batch_idx is 11, num iter is 20
+Client 3, submit!, batch_idx is 11
+Client 1 finished! Wait! It took 0.23520660400390625
+Client 1, submit!, batch_idx is 12, num iter is 20
+Client 1, submit!, batch_idx is 12
+Client 2 finished! Wait! It took 0.27667999267578125
+Client 2, submit!, batch_idx is 12, num iter is 20
+Client 2, submit!, batch_idx is 12
+Client 0 finished! Wait! It took 0.31400132179260254
+Client 0, submit!, batch_idx is 11, num iter is 20
+Client 0, submit!, batch_idx is 11
+Client 1 finished! Wait! It took 0.18932056427001953
+Client 1, submit!, batch_idx is 13, num iter is 20
+Client 1, submit!, batch_idx is 13
+Client 3 finished! Wait! It took 0.3868284225463867
+Client 3, submit!, batch_idx is 12, num iter is 20
+Client 3, submit!, batch_idx is 12
+Client 2 finished! Wait! It took 0.27358198165893555
+Client 2, submit!, batch_idx is 13, num iter is 20
+Client 2, submit!, batch_idx is 13
+Client 1 finished! Wait! It took 0.25714731216430664
+Client 1, submit!, batch_idx is 14, num iter is 20
+Client 1, submit!, batch_idx is 14
+Client 3 finished! Wait! It took 0.3656158447265625
+Client 3, submit!, batch_idx is 13, num iter is 20
+Client 3, submit!, batch_idx is 13
+Client 1 finished! Wait! It took 0.2861359119415283
+Client 1, submit!, batch_idx is 15, num iter is 20
+Client 1, submit!, batch_idx is 15
+Client 3 finished! Wait! It took 0.3441298007965088
+Client 3, submit!, batch_idx is 14, num iter is 20
+Client 3, submit!, batch_idx is 14
+Client 1 finished! Wait! It took 0.42037367820739746
+Client 1, submit!, batch_idx is 16, num iter is 20
+Client 1, submit!, batch_idx is 16
+Client 0 finished! Wait! It took 0.7133736610412598
+Client 0, submit!, batch_idx is 12, num iter is 20
+Client 0, submit!, batch_idx is 12
+Client 3 finished! Wait! It took 0.5316500663757324
+Client 3, submit!, batch_idx is 15, num iter is 20
+Client 3, submit!, batch_idx is 15
+Client 1 finished! Wait! It took 0.5304033756256104
+Client 1, submit!, batch_idx is 17, num iter is 20
+Client 1, submit!, batch_idx is 17
+Client 2 finished! Wait! It took 0.6661355495452881
+Client 2, submit!, batch_idx is 14, num iter is 20
+Client 2, submit!, batch_idx is 14
+Client 0 finished! Wait! It took 0.7810118198394775
+Client 0, submit!, batch_idx is 13, num iter is 20
+Client 0, submit!, batch_idx is 13
+Client 1 finished! Wait! It took 0.6904757022857666
+Client 1, submit!, batch_idx is 18, num iter is 20
+Client 1, submit!, batch_idx is 18
+Client 2 finished! Wait! It took 0.8059754371643066
+Client 2, submit!, batch_idx is 15, num iter is 20
+Client 2, submit!, batch_idx is 15
+Client 0 finished! Wait! It took 0.826148271560669
+Client 0, submit!, batch_idx is 14, num iter is 20
+Client 0, submit!, batch_idx is 14
+Client 3 finished! Wait! It took 0.832575798034668
+Client 3, submit!, batch_idx is 16, num iter is 20
+Client 3, submit!, batch_idx is 16
+Client 3 finished! Wait! It took 0.884289026260376
+Client 3, submit!, batch_idx is 17, num iter is 20
+Client 3, submit!, batch_idx is 17
+Client 1 finished! Wait! It took 0.8687107563018799
+Client 1, submit!, batch_idx is 19, num iter is 20
+Client 1, submit!, batch_idx is 19
+Client 3 finished! Wait! It took 0.9902896881103516
+Client 3, submit!, batch_idx is 18, num iter is 20
+Client 3, submit!, batch_idx is 18
+Client 2 finished! Wait! It took 1.0378761291503906
+Client 2, submit!, batch_idx is 16, num iter is 20
+Client 2, submit!, batch_idx is 16
+Client 3 finished! Wait! It took 1.0489895343780518
+Client 3, submit!, batch_idx is 19, num iter is 20
+Client 3, submit!, batch_idx is 19
+Client 2 finished! Wait! It took 1.1954116821289062
+Client 2, submit!, batch_idx is 17, num iter is 20
+Client 2, submit!, batch_idx is 17
+Client 0 finished! Wait! It took 1.2723100185394287
+Client 0, submit!, batch_idx is 15, num iter is 20
+Client 0, submit!, batch_idx is 15
+Client 1 finished! Wait! It took 1.177168369293213
+Client 1 at barrier! 
+Client 1 Total execution time: 3.6542699337005615 seconds
+Client 2 finished! Wait! It took 1.323145866394043
+Client 2, submit!, batch_idx is 18, num iter is 20
+Client 2, submit!, batch_idx is 18
+Client 3 finished! Wait! It took 1.2858686447143555
+Client 3 at barrier! 
+Client 3 Total execution time: 3.544001340866089 seconds
+Client 2 finished! Wait! It took 1.3427848815917969
+Client 2, submit!, batch_idx is 19, num iter is 20
+Client 2, submit!, batch_idx is 19
+Client 0 finished! Wait! It took 1.4800033569335938
+Client 0, submit!, batch_idx is 16, num iter is 20
+Client 0, submit!, batch_idx is 16
+Client 2 finished! Wait! It took 1.4060893058776855
+Client 2 at barrier! 
+Client 2 Total execution time: 3.864114999771118 seconds
+Client 0 finished! Wait! It took 1.5638766288757324
+Client 0, submit!, batch_idx is 17, num iter is 20
+Client 0, submit!, batch_idx is 17
+Client 0 finished! Wait! It took 1.5966558456420898
+Client 0, submit!, batch_idx is 18, num iter is 20
+Client 0, submit!, batch_idx is 18
+Client 0 finished! Wait! It took 1.609825611114502
+Client 0, submit!, batch_idx is 19, num iter is 20
+Client 0, submit!, batch_idx is 19
+Client 0 finished! Wait! It took 1.6316730976104736
+Client 0 at barrier! 
+Client 0 Total execution time: 3.9445390701293945 seconds
+Total time is 2.014094591140747
+Client 0 finshed 10 iterations
+Client 3 finshed 10 iterations
+Client 2 finshed 10 iterations
+Client 1 finshed 10 iterations
+Client 0 finished! p50: 1.3761566877365112 sec, p95: 1.6218417286872864 sec, p99: 1.629706823825836 sec, average: 1.178887963294983
+
+Client 3 finished! p50: 0.6821129322052002 sec, p95: 1.1792730450630184 sec, p99: 1.264549524784088 sec, average: 0.6801900625228882
+
+Client 1 finished! p50: 0.3532547950744629 sec, p95: 1.0383624434471126 sec, p99: 1.149407184123993 sec, average: 0.47763221263885497
+
+Client 2 finished! p50: 0.9219257831573486 sec, p95: 1.3776023149490355 sec, p99: 1.4003919076919555 sec, average: 0.8448163032531738
+
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Finished! Ready to join!
+Train threads joined!
+Scheduler thread joined!
+--------- All threads joined!
+Total energy consumed: 0.59 kJ
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd
+----------- SIZE: 152
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd
+----------- SIZE: 152
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd
+----------- SIZE: 152
+KERNEL_INFO_FILE IS /home/zixi/orion_bu/benchmarking/model_kernels/small_models/vitb16_8_fwd
+----------- SIZE: 152
+buffer size is 0
+buffer size is 0
+buffer size is 0
+buffer size is 0
+entered sched func!
+exited sched func!
+entered sched func!
+exited sched func!
+entered sched func!
+Client 1, Total loop took 1.558000 sec
+Client 3, Total loop took 1.667000 sec
+Client 2, Total loop took 1.787000 sec
+Client 0, Total loop took 2.012000 sec
+Total loop took 2.012000 sec
+exited sched func!
+config_files/new_baselines/Tnet_8_Tnet_8_Tnet_8_Tnet_8.json
